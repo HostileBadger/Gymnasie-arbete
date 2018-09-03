@@ -1,13 +1,13 @@
 # Royal Cinema of Sweden
 ### Uppdatera lokala projektmappen genom att:
-> git status
-> git pull
+1. git status
+2. git pull
 
 ### Lägg till uppdaterade filer i projektmappen:
-> git status
-> git add .
-> git commit -m "*kommentar*"
-> git push
+1. git status
+2. git add .
+3. git commit -m "*kommentar*"
+4. git push
 
 ## Checklista
 - [ ] Finish my changes
