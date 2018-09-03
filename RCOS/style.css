@@ -26,6 +26,41 @@ a {
 
 /** NAVBAR */
 
+.sidenav { /* Inställningarna för sid menyn vart den ska vara och hur den ska se ut */
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(17, 17, 17, 0.719);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+ }
+ 
+ .sidenav a { /* Inställningarna för sid menyns ord */
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+ }
+ 
+ .sidenav a:hover { /* Visar vitt när man håller över orden på sid menyn */
+    color: #f1f1f1;
+ }
+ 
+ .sidenav .closebtn { /* Bestämmer inställningarna för stäng knappen på sidmenyn*/
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+ }
+
+
 header{
   position:fixed;
   top:0;
