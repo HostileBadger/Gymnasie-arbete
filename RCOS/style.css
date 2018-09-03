@@ -330,11 +330,11 @@ iframe {
 }
 
 #pris .block {
-	width:33%;
+	width:25%;
 }
 
 #pris .block img {
-	width:8em;
+	width:15em;
 	transition: 0.5s;
 }
 
