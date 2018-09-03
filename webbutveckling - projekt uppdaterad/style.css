@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo|Open+Sans');
+body {
+  font-size:16px;
+  margin:0;
+  padding:0;
+  font-family: "Arimo";
+  background-color:#111111;
+}
+
+.container {
+	width:80%;
+	overflow:hidden;
+	margin:auto;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+a {
+	text-decoration:none;
+	color:#ffffff;
+}
+
+
+header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  padding-top:1.5em;
+  padding-bottom:1.5em;
+  background-color:#111111;
+  color:#ffffff;
+  opacity: 0.9;
+  z-index:1;
+  border-bottom:1px solid #ffffff;
+}
+
+header li{
+  float:left;
+  display:inline;
+  padding-left:1.5em;
+  padding-right:1.5em;
+}
+
+
+header #logo{
+  float:left;
+}
+
+header #logo img {
+  width:8em;
+}
+
+header #logo h1{
+  margin:0;
+}
+
+header nav{
+  float:right;
+  margin-top:10px;
+}
+
+nav ul li a {
+	position:relative;
+	color:#ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size:1em;
+}
+
+nav ul li a::after { /* CSS-animation, här används pseudo-elementet after för att animera linjer när man hovrar över länken */
+	content:'';
+	display:block;
+	width:0em;
+	height:0.12em;
+	background-color:#ffffff;
+	transition: width 0.7s;
+}
+
+nav ul li a:hover::after { /* Här aktiveras animationen */
+	width:100%;
+}
+
+.nuvarande{ /* Används för navigations länkarna, visar vilken länk som är nuvarande */
+  font-weight:bold;
+  font-size:1.15em;
+}
+
+header a:hover{
+  color:#cccccc;
+  font-weight:bold;
+}
+
+#main {
+	height:35em;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-image:url("http://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1479753249/fiola-MICHSTAR1118.jpg?itok=4Koy7uwY");
+	text-align:center;
+	color:#ffffff;
+	position:relative;
+}
+
+#main p, #info p { /* Margin för knappen nedanför paragrafen */
+	margin-bottom:2.5em;
+}
+
+.test { /* Positionerar rubrik texten i start hemsidan*/
+	position:absolute;
+	top:13em;
+	right:0;
+	left:0;
+	margin:auto;
+}
+
+
+#main-meny, #main-boka, #main-galleri, #main-kontakta { /* Standard stil för de primära sektioner */
+	text-align:center;
+	background-color:#111111;
+	color:#ffffff;
+	background-image:none;
+	padding-bottom:6em;
+}
+
+
+#main-meny .container, #main-boka .container, #main-kontakta .container { /* Ändrar bredden av container */
+	width:50%;
+}
+
+#main-meny h1, #main-boka h1, #main-galleri h1 { /* Påverkar hela sektionen  */
+	margin-top:4.5em;
+	margin-bottom:1.5em;
+}
+
+
+#main-meny .border {
+  padding:20px;
+  margin:20px;
+  border:1px solid #212121;
+  border-radius:0.3em;
+  font-size:0.9em;
+}
+
+
+#main-galleri .bildrad img { /* object-fit:cover; -  Behåller bildförhållandet och animerar opacity */
+	width:25em;
+	height:15em;
+	object-fit:cover;
+	opacity:1;
+	transition: 1s ease;
+}
+
+
+#main-galleri .bild {
+	margin-bottom:-4px;
+	background-color:#ffffff;
+}
+
+#main-galleri .bildrad img:hover { /* Ger markör som "pekar" samt animerar opacity */
+	opacity:0.65;
+	cursor:pointer;
+}
+
+
+#main-kontakta {
+	background-image:url("https://i.pinimg.com/originals/1c/11/aa/1c11aabcc68a42376848da411dc23896.jpg");
+	background-size:cover;
+	background-position:center center;
+	height:18em;
+	margin-bottom:10em;
+	margin-top:9em;
+}
+
+#main-kontakta h3, #main-kontakta p {
+	font-size:0.8em;
+}
+
+#main-kontakta .container {
+	width:20%;
+}
+
+#main-kontakta .border {
+	border:1px solid #ffffff;
+	padding:2em;
+	background-color:#111111;
+}
+#main-kontakta .tabell {
+	font-size:0.75em;
+}
+
+#main-kontakta .tabell td, #main-kontakta .tabell th {
+	padding:0.9em;
+}
+
+input[type=text], input[type=time], input[type=date], input[type=submit] { /* bara stilsättning */
+    width: 100%;
+    padding: 0.5em 1em;
+    margin: 8px 0;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:1em;
+    background-color:#111111;
+    color:#ffffff;
+}
+
+input[type=submit] {
+	margin-top:2em;
+	background-color:#212121;
+}
+form {
+	margin-bottom:3em;
+}
+
+
+.button, button { 
+	margin-top:2em;
+    border: 2px solid #e7e7e7;
+    border-radius:0.2em;
+    color: #ffffff;
+    background-color:transparent;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:1em;
+    transition: 0.5s ease;
+    border-radius
+}
+
+button:hover, .button:hover {
+	background-color:#e7e7e7;
+	color:#111111;
+}
+
+.block {
+	float:left;
+	padding:1em;
+	box-sizing:border-box ;
+	text-align:center;
+}
+
+#info {
+	padding-top:2em;
+	background-color:#111111;
+	color:#ffffff;
+	line-height:1.5em;
+	padding-bottom:5em;
+	font-size:0.9em;
+}
+
+#info .block {
+	width:50%;
+}
+
+#info .block img{
+  width:30em;
+  border:1px solid #ffffff;
+}
+
+#info .block h2 {
+	padding-bottom:0.5em;
+}
+
+#info .block .border {
+	width:45%;
+	border-bottom: 2px solid #ffffff;
+	display:inline-block;
+}
+
+iframe {
+	padding-top:1em;
+	display:block;
+	margin:auto;
+}
+
+
+#pris {
+	padding-top:4em;
+	padding-bottom:4em;
+	background-image:url("pris.png");
+	background-size:cover;
+	background-position:center center;
+}
+
+#pris h1 {
+	color:#ffffff;
+	text-align:center;
+}
+
+#pris .block {
+	width:33%;
+}
+
+#pris .block img {
+	width:8em;
+	transition: 0.5s;
+}
+
+#pris .block img:hover {
+	opacity:0.85;
+	cursor:pointer;
+}
+
+
+#bilder {
+	background-color:#111111;
+}
+
+.bildrad {
+	display:flex;
+}
+
+#bilder img {
+	width:25%;
+	height:300px;
+	object-fit:cover;
+}
+
+footer {
+  background-color:#111111;
+  height:18em;
+  color:#ffffff;
+  font-size:0.8em;
+}
+
+footer .block {
+	width:33%;
+}
+
+
+.tabell {
+    border-collapse: collapse; /* gör att det endast är en border */
+    width: 100%;
+}
+
+.tabell td, .tabell th {
+    padding: 0.2em;
+}
+
+.tabell tr:nth-child(odd){ /* varannan rad får en viss bakgrundsfärg */
+	background-color: #161616;
+}
+
+.tabell th {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #161616;
+    color: #ffffff;
+}
+
+
+.svg-icon {
+  width: 3.5em;
+  height: 3.5em;
+  margin-bottom:1em;
+}
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon  { /* färgen vit får svgn */
+  fill: #ffffff;
+}
+
+.svg-icon circle {
+  stroke: #ffffff;
+  stroke-width: 1px;
+}
