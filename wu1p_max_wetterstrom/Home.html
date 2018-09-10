@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+      <!-- Titel och link och script är länkar till bootstrap och jquery och även sidans ikon-->
+        <title>TopGames - Find your new favourite game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Files/CSS.css">
+        <link rel="Icon" type="image/png" href="Files/Images/Icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <!-- klassen body är endast till för att jag ska kunna sätta en fixed background så att jag kan scrolla med subbackround(gråa bakgrunden) -->
+        <div class="body"></div>
+        <div class="SubBackground">       
+        
+      <!-- klassen body är endast till för att jag ska kunna sätta en fixed background så att jag kan scrolla med subbackround(gråa bakgrunden) -->
+      <header id="TopList">
+        <div>
+        <img class="HiringImg" src="Files/drawsvg.svg" alt="svg">
+          <a href="Home.html" class="TopGames"><span class="Top">Top</span><span class="Games">Games</span></a>
+        </div>
+        <div>
+            <img src="Files/Images/Icon.png" alt="Icon" class="Icon">
+        </div>
+        <div>
+          <a id="above-nav-bar" href="Home.html"><span class="CurrentPage">Home</span></a>   
+        </div>
+      </header>
+        
+      <!-- Självaste Navbaren, den heter Menu istället för navbar eftersom den classen hade en annan funktion med bootstrap -->
+      <div class="Menu">
+          <ul>
+            <li><a href="News.html">News</a></li>
+            <li><a href="ComingSoon.html">Coming Soon</a></li>
+            <li><a href="TopRated.html">Games &#9660;</a>
+              <ul>
+                  <li><a href="Sales.html">Sales Chart</a></li>
+                  <li><a href="TopRated.html">Top Rated </a></li>
+              </ul>
+          </li>
+          </ul>
+        </div>
+        Rad 424
+        <!-- Den gråa rutan som vänder sig 180 grader där det står info om sidan -->
+        <div class="Info">
+            <span class="InfoHeader"> Welcome to TopGames official website</span> <br> <br>
+        
+            This website lists a personal opinion about good games
+            which you should <br> play, but also games other sources like game 
+            critics think you should play. <br> It lists the games based on score and
+            other critics have given their game and <br> the communities personal favourites.
+            <br> <br> The information the page gives about the games are: <br>
+
+            <br>Name
+            <br>Price
+            <br>Ratings
+            <br>General information
+        <br><br>
+            The games are sorted by category which can be found at the top navigation bar<br> 
+            or by hovering your mouse over this.
+            
+            <div class="RotatedText"> <p class="RotatedHeader">Additional Info:</p> <br><br> 
+              <a href="Sales.html"> Sales Chart </a><br><br>
+                <p>The main sources used are:</p><br>
+               <a href="http://nordic.ign.com/">IGN</a><br>
+               <a href="http://www.metacritic.com/">Metacritic</a><br>
+               <a href="https://fandom.wikia.com">FANDOM</a><br>
+            </div>
+        </div> 
+
+        <!-- Karusellen som byter mellan bilder -->
+<div class="Carousel">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+              <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>
+          
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+              <div class="item active">
+                  <p>The Witcher 3: Wild Hunt</p>
+                <img src="https://cdn3.dualshockers.com/wp-content/uploads/2015/02/The-Witcher-3-Wild-Hunt-Download-PC-Free-Full-Version-Crack-10-1.jpg" alt="Far Cry 5">
+              </div>
+
+              <div class="item">
+                  <p>Bioshock Infinite</p>
+                <img src="https://images-eu.ssl-images-amazon.com/images/G/02/uk-videogames/2013/A-Plus/tcvista_ONLINE_large._V376368064_.jpg" alt="Bioshock Infinite">
+              </div>
+          
+              <div class="item">
+                  <p>Skyrim</p>
+              <!--  <img src="https://cdn3.dualshockers.com/wp-content/uploads/2014/05/ProjectCARS.jpg" alt="Chicago"> -->
+              <img src="https://cdn.uploadvr.com/wp-content/uploads/2017/06/skyrim-wallpaper.jpg" alt="Skyrim">
+              </div>
+          
+              <div class="item">
+                  <p>The Last of Us</p>
+                <img src="http://stimulatedboredom.com/wp-content/uploads/2013/07/the-last-of-us-review-stimulated-boredom.jpg" alt="The Last of Us">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+
+          <!-- Det som alltid står längst ned på rutan och följer med när man scrollar -->
+          <footer>
+            <a href="TermsofService.html">Terms of Service</a>
+            <a href="Contact.html">Contact</a>
+          </footer>
+        </div>
+
+        <!-- Videon -->
+    <div class="VideoBox">
+      Featured Game Trailer: Skyrim<br>
+      <!-- Bilden på pilbågen bredvid videon -->
+      <img class="SkyrimBow" src="https://vignette.wikia.nocookie.net/elderscrolls/images/e/e4/Longbow.png/revision/latest?cb=20120612173607" alt="Skyrim Bow">
+    <video width="800" height="450" controls>
+          <source src="Files/Video.mp4" type="video/mp4">   
+    </video>
+        <!-- Bilden på svärdet bredvid videon -->
+      <img class="SkyrimSword" src="https://vignette.wikia.nocookie.net/elderscrolls/images/0/01/Steel_Sword.png/revision/latest?cb=20121012192803" alt="Skyrim Sword">
+    </div>
+      </div>  
+    </body>
+</html>
+
