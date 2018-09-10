@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+  <title>Webbsida</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <nav id=navbar>
+        <div class="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="Index.html" class="selected">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+  
+    <div class="col-sm-1 sidebar">
+        <ul class="nav sidenav sidelist">
+            <li><a href="svg.html">SVG</a></li>
+            <li><a href="Tabel.html" class="selected">Tabel</a></li>
+            <li><a href="Animation.html">Animation</a></li>
+            <li><a href="CSS.html">CSS</a></li>
+            <li><a href="HTML.html">HTML</a></li>
+        </ul>
+    </div>
+
+        <div class="col-sm-11 text-left primaryTitle"> 
+            <h1> What is a table?</h1>
+            <p>A table consists of columns and rows, and creates a spreadsheet.</p>
+            <div>
+                <table class="marginAuto">
+                    <tr id="tableTitle">
+                        <th>Time:</th>
+                        <th>Monday</th>
+                        <th>Tuseday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr id="kl0600">
+                        <th>06:00</th>
+                        <td>13°</td>
+                        <td>10°</td>
+                        <td>10°</td>
+                        <td>10°</td>
+                        <td>11°</td>
+                    </tr>
+                    <tr id="kl1200">
+                        <th>12:00</th>
+                        <td>21°</td>
+                        <td>20°</td>
+                        <td>22°</td>
+                        <td>23°</td>
+                        <td>23°</td>
+                    </tr>
+                    <tr id="kl1800">
+                        <th>18:00</th>
+                        <td>19°</td>
+                        <td>20°</td>
+                        <td>22°</td>
+                        <td>25°</td>
+                        <td>23°</td>
+                    </tr>
+                    <tr id="kl2400">
+                        <th>24:00</th>
+                        <td>12°</td>
+                        <td>12°</td>
+                        <td>12°</td>
+                        <td>15°</td>
+                        <td>13°</td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr>
+
+            <div>
+                <h2>how to use tables</h2>
+                <p>to create the body for a table you use the &lt;table> tag and then fill it with &lt;tr> tags, that you then fill with &lt;th>, or &lt;td> tags</p>
+                <div class="GenericBorder">
+                        <p class="margin5px">
+                            &lt;table>
+                            <br>
+                                &lt;tr class="row1">
+                            <br>
+                            <br>
+                                &lt;th class="header"> header column1&lt;/th>
+                            <br>
+                            <br>
+                                &lt;td class="column2"> column2&lt;/td>
+                            <br>
+                            <br>
+                                &lt;td class="column3"> column3&lt;/td>
+                            <br>
+                            <br>
+                                &lt;/tr>
+                            <br>
+                            &lt;tr class="row2">
+                            <br>
+                            <br>
+                                &lt;th class="header"> header column1&lt;/th>
+                            <br>
+                            <br>
+                                &lt;td class="column2"> column2&lt;/td>
+                            <br>
+                            <br>
+                                &lt;td class="column3"> column3&lt;/td>
+                            <br>
+                            <br>
+                                &lt;/tr>
+                            <br>
+                            &lt;/table>
+                        </p>
+                </div>
+                <div class="GenericBorder">
+                    <table class="margin5px">
+                        <tr class="row1">
+                            <th class="header">header column1</th>
+                            <td class="row1">column2</td>
+                            <td class="row2">column3</td>
+                        </tr>
+                        <tr class="row2">
+                            <th class="header">header column1</th>
+                            <td class="row1">column2</td>
+                            <td class="row2">column3</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    <!-- Example -->
+    
+</body>
+</html>
