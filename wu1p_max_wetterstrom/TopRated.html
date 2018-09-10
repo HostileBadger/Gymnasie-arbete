@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Titel och link och script är länkar till bootstrap och jquery och även sidans ikon-->
+        <title>TopGames - Find your new favourite game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="Files/CSS.css">
+        <link rel="Icon" type="image/png" href="Files/Images/Icon.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <!-- klassen body är endast till för att jag ska kunna sätta en fixed background så att jag kan scrolla med subbackround(gråa bakgrunden) -->
+        <div class="body"></div>
+        <div class="SubBackground">
+
+            <!-- Allting över Navbaren -->
+                <header id="TopList">
+                        <div>
+                        <img class="HiringImg" src="Files/drawsvg.svg" alt="svg">
+                          <a href="Home.html" class="TopGames"><span class="Top">Top</span><span class="Games">Games</span></a>
+                        </div>
+                        <div>
+                            <img src="Files/Images/Icon.png" alt="Icon" class="Icon">
+                        </div>
+                        <div>
+                          <a id="above-nav-bar" href="Home.html">Home</a>   
+                        </div>
+                      </header>
+        
+        <!-- Självaste Navbaren, den heter Menu istället för navbar eftersom den classen hade en annan funktion med bootstrap -->
+        <div class="Menu">
+                <ul>
+                  <li><a href="News.html">News</a></li>
+                  <li><a href="ComingSoon.html">Coming Soon</a></li>
+                  <li><a href="TopRated.html">Games &#9660;</a>
+                    <ul>
+                        <li><a href="Sales.html">Sales Chart</a></li>
+                        <li><a href="TopRated.html">Top Rated </a></li>
+                    </ul>
+                </li>
+                </ul>
+              </div>
+
+            <!-- De top 3 spelar som visas med en  animerad rubrik -->
+          <div class="GamesHeader">Top 3 Rated Games</div>
+
+          <div class="Top3Games">
+              <!-- God of War -->
+                <div class="Game1">
+                    <div class="Game1text">
+                        <p>God of War</p>
+                        <p>It is a game loosely based on Norse mythology. The main protagonists are Kratos, the former Greek God of War, and his young son Atreus. Following the death of Kratos' second wife and Atreus' mother, they journey to fulfill her promise and spread her ashes at the highest peak of the nine realms. Kratos keeps his troubled past a secret from Atreus, who is unaware of his divine nature. Along their journey, they encounter monsters and gods of the Norse world.</p>
+
+                    </div>
+                    <div class="Game1img">
+                        <img src="Files/Images/God-of-War.jpg" alt="GodofWar">  
+                    </div>
+                </div>
+                <!-- The Witcher 3 -->
+                <div class="Game2">
+                    <div class="Game2text">
+                        <p>The Witcher 3</p>
+                        <p>Players control protagonist Geralt of Rivia, a mutated monster hunter known as a "witcher", who is looking for his missing adopted daughter on the run from the Wild Hunt: an otherworldly force determined to capture and use her powers. Players battle the game's many dangers with weapons and magic, interact with non-player characters, and complete main-story and side quests to acquire experience points and gold, which are used to increase Geralt's abilities and purchase equipment. Its central story has several endings, determined by the player's choices at certain points in the game.</p>
+                    </div>
+                    <div class="Game2img">
+                            <img src="Files/Images/TheWitcher3.png" alt="GodofWar">  
+                    </div> 
+                </div>
+                <!-- The Last of Us -->
+                <div class="Game3">
+                    <div class="Game3text">
+                        <p>The Last of Us</p>
+                        <p>Players control Joel, a smuggler tasked with escorting a teenage girl named Ellie across a post-apocalyptic United States. The Last of Us is played from a third-person perspective; players use firearms and improvised weapons, and can use stealth to defend against hostile humans and cannibalistic creatures infected by a mutated strain of the Cordyceps fungus. In the game's online multiplayer mode, up to eight players engage in cooperative and competitive gameplay.</p>
+                    </div>
+                    <div class="Game3img">
+                            <img src="Files/Images/TheLastofUs.jpg" alt="GodofWar">  
+                    </div> 
+                </div>
+          </div>
+
+          <!-- Det som alltid står längst ned på rutan och följer med när man scrollar -->
+        <footer>
+            <a href="TermsofService.html">Terms of Service</a>
+            <a href="Contact.html">Contact</a>
+        </footer>
+        </div>          
+    </body>
+</html>

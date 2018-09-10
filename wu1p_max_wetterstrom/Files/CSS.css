@@ -1,0 +1,621 @@
+/* Bakgrunden till sidan som har position fixed och täcker sidan */
+.body{
+    background-image: url("Images/gamewall.png");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+    left: 0;
+    top: 0;
+}
+
+/*The grey SubBackground in the middle where all the content is*/
+.SubBackground{
+    border: 0px solid transparent;
+    background:#333;
+    height: 150vh;
+    width: 79vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    opacity: 0.99;
+}
+
+/* Gör endast så att punkterna från listor tas bort */
+#TopList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: Impact;
+}
+/* gör list elementen ovanför navbaren hamnar rätt*/
+#TopList li{
+    float: right;
+    width: 10%;
+    padding: 1%;
+}
+
+/*Links at the very top*/ 
+#above-nav-bar {
+    float: right;
+    color: white;
+    padding: 1% 2.5%;
+    text-decoration: none;
+    font-size: 120%;
+    font-family: Impact;
+    position: relative;
+    right: 10%; 
+    list-style-type: none;
+}
+
+/*Links above white navbar changes color on hover*/
+ #above-nav-bar:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+/* gör så att sidan man befinner har röd textfärg */
+.CurrentPage{
+    color: red;
+}
+/* När man hovrar musen över sidan man är på ska den bli orange */
+.CurrentPage:hover{
+    color: orange;
+}
+
+/* css för navbaren */
+.Menu{    
+    text-align: center;
+    width: 100%;
+    background: #fff;
+    overflow: hidden;
+    font-family: Impact;
+    font-size: 120%;
+}
+
+/* för hela listan i menyn */
+.Menu ul{
+    margin: 0;
+    padding: 0;
+}
+
+/* Gör att knapparna i navbaren ser rätt ut */
+.Menu ul li a{
+    display: block;
+    padding: 9%;
+    color: black;
+    text-decoration: none;
+    width: 150px;
+}
+
+/* Gör att knapparna hamnar bredvid varandra */
+.Menu ul li{
+    float: left;
+    list-style: none;
+}
+
+/* Gör så att lista med alternativ kommer fram när man hovrar över den li som innehåller en ul */
+.Menu ul li:hover > ul{
+    display: block;
+    position: absolute;
+    border-radius: 25px;
+}
+
+/* En liten animation som gör att bakrunden fadar in när man hovrar */
+.Menu ul li:hover a{
+    background: GoldenRod ;
+    transition: 0.4s;
+}
+
+/* Texten i knapparna i navbaren blir vid när man hovrar över den */
+.Menu ul li:hover a{
+    color: white; 
+}
+
+/* Gör så att dropdownen vanligtvis inte syns */
+.Menu ul ul{
+    display: none;
+    position: relative;
+    padding: 0;
+    margin :0;
+}
+
+/* Gör så att länkarna i dropdownen hamnar under varann */
+.Menu ul ul li{
+    float: none;
+}
+
+/* Utseende för texten i dropdownen */
+.Menu ul ul li a{
+    padding: 25px;
+    color: white;
+    width: 150px;
+    text-align: center;
+}
+
+/* Gör så att bakgrunden blir röd vid hover och att texten blir guldig */
+/* Gör även detta med en liten animation så det smått fadar in */
+.Menu ul ul li a:hover{
+    background: red  ;
+    color: gold;
+    transition: 0.4s;
+}
+
+/* Längst upp på sidan där det står top */
+/* Utseende för denna */
+.Top{
+    font-size: 220%;
+    font-family:  Impact;
+    background: -webkit-linear-gradient(rgb(253, 141, 14), rgb(231, 197, 116));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 7%;
+    text-shadow: 0px 0px 2px orange, 0 0 20px #FF8C00;
+    }
+
+/* Längst upp på sidan där det står games */
+/* Utseende för denna */
+.Games{
+    font-size: 220%;
+    font-family:  Impact;
+    background: -webkit-linear-gradient(rgb(243, 30, 30), rgb(255, 52, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    left: 11%;
+    text-shadow: 0px 0px 2px rgb(255, 38, 0), 0 0 20px rgb(255, 51, 0);
+    }
+
+    /* Positionering för ikonen */
+.Icon{
+    position: absolute;
+    left: 20%;
+    max-height: 3.5%;
+    height: auto;
+    z-index: 2;
+    top: 0.3% ;
+}
+
+/* positionering för svg */
+.HiringImg{
+    position: absolute;
+    height: 9%;
+    left: -2%;
+    top: -0.4%;
+    z-index: -1;
+}
+
+/* Rubriken för texten i den gråa rutan som snurrar 180 grader */
+.InfoHeader{
+    font-size: 160%;
+    text-decoration: underline;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* För den gråa saken som snurrar 180 grader */
+.Info{
+    position: absolute;
+    font-size: 90%;
+    color: white;
+    position: relative;
+    left: 53%;
+    top: 50%; 
+    border: 3px transparent solid;
+    background: rgb(88, 85, 85);
+    padding: 2%;
+    display: block;  
+    border-radius: 5px;
+    font-family: "Comic Sans MS", cursive, sans-serif; 
+    max-width: 45%;
+    max-height: 45%; 
+    z-index: -1; 
+}
+
+/* Gör så att den snurrar 180 grader när man hovrar över den */
+.Info:hover {   
+    transform: rotateY(180deg);
+    animation-duration: 0s;
+    animation-delay: 0.55s;
+    animation-name: opacity;
+    transition-property: transform;
+    transition-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation som gör att texten i gråa rutan fadar ut och sedan försvinner */
+@keyframes opacity{
+    0%{color: rgb(255, 255, 255)}
+    100%{
+        color: rgba(0,0,0,0);}
+}
+
+/* För texten som finns på andra sidan av gråa rutan */
+.RotatedText{
+    display: none;
+    opacity: 0;
+    position: absolute;
+    font-size: 120%;
+    font-family:  Impact;
+    color: white;
+    left: 33%;
+    top: 3%;
+    padding: 3%;
+    text-align: center; 
+}
+
+/* Gör så att texten "bakom" gråa rutan blir synlig */
+.Info:hover .RotatedText{
+    display: block;
+    transform: rotateY(180deg);
+
+    animation-name: reveal;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* Animation för att text bakom gråa rutan ska bli synlig */
+@keyframes reveal{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+/* För rubriken "bakom" rutan */
+.RotatedHeader{
+    font-size: 120%;
+    text-decoration: underline;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* för länkarna "Bakom rutan" */
+.RotatedText a{
+    text-decoration: none;
+    color: white;
+    padding: 0.01vh;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+/* Gör så att texten och bakgrund byter färg vid hover */
+.RotatedText a:hover{
+    background: grey;
+    text-decoration: none;
+    color: orange;
+
+}
+
+/* Positionering för karusellen, den i homepagen som byter mellan bilder */
+.Carousel{
+    max-height: 45%;
+    max-width : 45%;
+    position: absolute;
+    left: 3%;
+    top: 61%;
+    z-index: -1;
+}
+
+/* Custom font i karusellen */
+@font-face {
+    font-family: DamagedFont;
+    src: url("Very Damaged.ttf");
+}
+
+/* Design för texten i karusellen */
+.Carousel p{
+    font-size: 140%;
+    color: white;
+    font-family: DamagedFont;
+    text-align: center;
+}
+
+/* För "Terms of Service" och "Contact" längst ned på sidan*/
+footer{
+    position: fixed;
+    bottom: 0;
+    left: 41%;  
+    z-index: 100;
+}
+
+/* Specifikt för själva länkarna längst ned på sidan  */
+footer a{
+    font-size: 120%;
+    font-family:  Impact;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Länkarna längst ned på sidan byter textfärg vid hover */
+footer a:hover{
+    color: orange;
+    text-decoration: none;
+}
+
+/* För formuläret i Contact sidan */
+.Form{
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    color: red;
+    font-family: Impact;
+    font-size: 120%;
+    border: 3px solid transparent;
+    outline: 10px ridge red;
+    padding: 2%;
+    background: #ffc837;
+    box-shadow: 2px 2px 10px LightGray;
+    z-index:-1;
+    padding: 2% 40% 2% 2%;
+}
+
+/* Gör så att inputen får en shadow, ser lite mer 3D aktig ut */
+.Form input{
+    box-shadow: 0 5px  LightGray;
+}
+
+/* Design för knappen i formuläret */
+#Sendbtn{
+    border: none;
+    box-shadow: 0 6px #999;
+    border-radius: 15px;
+}
+
+/* Knappen byter bakgrundfärg vid hover */
+#Sendbtn:hover {
+    background-color: grey;
+}
+
+/* Gör så att det sur ut som knappen blir nedtryckt genom att flytta ned den lite */
+#Sendbtn:active {
+    background-color: LightGray;
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+
+/* Tar bort den blåa outlinen som blir när man klickar på en knapp */
+#Sendbtn:focus {
+    outline: 0;
+}
+
+/* Positionering och storlek för videon på home sidan */
+.VideoBox{
+    display: block;
+    position: absolute;
+    left: 17%;
+    top: 13%;
+    z-index: -1;
+    color: white;
+    text-align: center;
+    font-size: 140%;
+    font-family: Impact;
+    text-decoration: underline;
+}
+
+/* Positionering för pilbågen bredvid videon */
+.SkyrimBow{
+    position: absolute;
+    width: 45%;
+    left: -35%;
+    top: -0.1%;
+}
+
+/* Positionering för svärdet bredvid hemsidan */
+.SkyrimSword{
+    position: absolute;
+    width: 12%;
+    left: 105%;
+    top: 4%;
+}
+
+/* Design för hela tabellen */
+table{
+    position: relative;
+    margin: auto;
+    color: white;
+    border-collapse: collapse;
+    z-index: -1;
+    font-size: 120%;
+    font-family: Italic;
+    top: 5%;
+}
+
+/* För översta raden med rubriker på tabellen */
+table th{
+    text-align: left;
+    background-color: #3a6070;
+    padding: 4px 30px 4px;
+}
+
+/* För raderna under radrubrikerna */
+table td{
+    border: 1px solid #e3e3e3;
+    padding: 3px 5px;
+}
+
+/* Gör så att varannan rad är röd och grön */
+table tr:nth-child(odd) td{
+    background-color: green;
+}
+table tr:nth-child(even) td{
+    background-color: red;
+}
+
+/* Rubriken i Top Rated */
+.GamesHeader{
+    position: absolute;
+    font-size: 250%;
+    font-family: Impact, Charcoal, sans-serif;
+    color: white;
+    left: 40%;
+    top: 10%;
+    z-index: -1;
+    animation-name: spacing;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+/* Animation som gör att dens letter spacing ökar och minskar */
+@keyframes spacing{
+    0%{letter-spacing: 0;}
+    50%{
+        letter-spacing:2px;
+        left: 39%;
+    }
+    100%{letter-spacing:0;}
+}
+
+/* Storlek på bilder i Top Rated */
+.Top3Games div img{
+    width: 35%;
+}
+
+/* Design för första spelet */
+.Game1{
+    position: absolute;
+    top: 20%;
+    left: 2%;
+    right: 2%;
+    border: 1px solid white;
+    z-index: -1;
+    background: url("https://cdn3.dualshockers.com/wp-content/uploads/2017/12/GodOFWar-5.jpg");
+}
+
+/* För all text i första spelet */
+.Game1text{
+    position: absolute;
+    color: white;
+    font-size: 140%;
+    font-family: Impact;
+    letter-spacing: 1px;
+    margin-left: 65%;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* För brödtexten i första spelet */
+.Game1text p:nth-child(2) {
+    margin-left: -70%;
+    font-size: 88%;
+}
+
+/* Design för andra spelet */
+.Game2{
+    position: absolute;
+    top: 40.9%;
+    left: 2%;
+    right: 2%;
+    border: 1px solid white;
+    display: inline-block;
+    z-index: -1;
+    background: url("http://media1.gameinformer.com/filestorage/CommunityServer.Components.SiteFiles/imagefeed/featured/cdprojekt/witcher3/exclusiveweather/1280/deszczf1280.jpg");
+}
+
+/* För all text i andra spelet */
+.Game2text{
+    position: absolute;
+    color: white;
+    font-size: 140%;
+    font-family: Impact;
+    letter-spacing: 1px;
+    margin-left: 65%;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* För brödtexten i första spelet */
+.Game2text p:nth-child(2){
+    margin-left: -70%;
+    font-size: 88%;
+}
+
+/* Design för andra spelet */
+.Game3{
+    position: absolute;
+    top: 61.8%;
+    left: 2%;
+    right: 2%;
+    border: 1px solid white;
+    display: inline-block;
+    z-index: -1;
+    background: url("http://www.nowgamer.com/wp-content/uploads/2014/07/381983.jpg");
+}
+
+/* För all text i andra spelet */
+.Game3text{
+    position: absolute;
+    color: white;
+    font-size: 140%;
+    font-family: Impact;
+    letter-spacing: 1px;
+    margin-left: 65%;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* För brödtexten i första spelet */
+.Game3text p:nth-child(2){
+    margin-left: -70%;
+    font-size: 88%;
+}
+
+/* För rubriken i News sidan */
+.News h1{
+    color: white;
+    text-align: center;
+    font-family:  Impact;
+    font-size: 260%;
+}
+
+/* För all text under rubriken i News sidan */
+.News div{
+    color: white;
+    margin-left: 43%;
+    font-family:  Impact;
+    font-size: 120%;
+}
+
+/* För all text i Terms of Service sidan */
+.TermsofService{
+    margin-top: 5%;
+    color: white;
+    text-align: center;
+    font-size: 160%;
+    font-family:  Impact;
+}
+.comingsoon div{
+    margin-left: 2%;
+    margin-right: 1%;
+    display: inline-block;
+    color: white;
+    font-family:  Impact;
+    font-size: 110%;
+}
+
+/* För rubriken i coming soon sidan */
+.comingsoon h1{
+    position: relative;
+    font-size: 240%;
+    color: white;
+    left: 40%;
+    max-width: 33%;
+    font-family:  Impact;
+}
+
+/* Gör så att diven får en maximal storlek */
+.comingsoon div{
+    max-width: 30%;
+}
+
+/* Gör så att bilden i diven täcker upp 100% */
+.comingsoon div img{
+    max-width: 100%;
+}
+
+/* Position för svg */
+.svg{
+    position: absolute;
+    top: 10%;
+    left: -5%;
+}

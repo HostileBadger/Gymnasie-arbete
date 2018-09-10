@@ -4,26 +4,26 @@ body {
     padding:0;
     font-family: "Helvetica";
     background-color:#ffffff;
-  }
+}
   
-  .container {
+.container {
       width:80%;
       overflow:hidden;
       margin:auto;
-  }
+}
   
-  ul{
+ul{
     margin:0;
     padding:0;
     list-style:none;
-  }
+}
   
-  a {
+a {
       text-decoration:none;
       color:#ffffff;
-  }
+}
 
-  header{
+header{
     position:fixed;
     top:0;
     left:0;
@@ -32,7 +32,6 @@ body {
     padding-bottom:1.5em;
     background-color:#111111;
     color:#ffffff;
-    opacity: 0.9;
     z-index:1;
     border-bottom:1px solid #ffffff;
   }
