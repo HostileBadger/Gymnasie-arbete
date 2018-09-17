@@ -36,60 +36,117 @@ header{
     border-bottom:1px solid #ffffff;
   }
   
-  header li{
+header li{
     float:left;
     display:inline;
     padding-left:1.5em;
     padding-right:1.5em;
-  }
+}
   
-  
-  
-  header #logo{
+header #logo{
     float:left;
-  }
+}
+
+  header #left{
+    float:left;
+}
   
-  header #logo img {
+header #logo img {
     width:8em;
-  }
+}
   
-  header #logo h1{
+header #logo h1{
     margin:0;
-  }
+}
   
-  header nav{
+header nav{
     float:right;
     margin-top:10px;
-  }
+}
   
-  nav ul li a {
-      position:relative;
-      color:#ffffff;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-size:1em;
-  }
+nav ul li a {
+    position:relative;
+    color:#ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:1em;
+}
   
-  nav ul li a::after { /* CSS-animation, här används pseudo-elementet after för att animera linjer när man hovrar över länken */
-      content:'';
-      display:block;
-      width:0em;
-      height:0.12em;
-      background-color:#ffffff;
-      transition: width 0.7s;
-  }
+nav ul li a::after { /* CSS-animation, här används pseudo-elementet after för att animera linjer när man hovrar över länken */
+    content:'';
+    display:block;
+    width:0em;
+    height:0.12em;
+    background-color:#ffffff;
+    transition: width 0.7s;
+}
   
-  nav ul li a:hover::after { /* Här aktiveras animationen */
-      width:100%;
-  }
+nav ul li a:hover::after { /* Här aktiveras animationen */
+    width:100%;
+}
   
-  .nuvarande{ /* Används för navigations länkarna, visar vilken länk som är nuvarande */
+.nuvarande{ /* Används för navigations länkarna, visar vilken länk som är nuvarande */
     font-weight:bold;
-    font-size:1.15em;
-  }
+}
   
   header a:hover{
     color:#cccccc;
     font-weight:bold;
   }
   
+#main {
+	height:40em;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-image:url("pics/Jurassic.jpg");
+	text-align:center;
+	color:#ffffff;
+	position:relative;
+}
+
+#main h2 {
+    margin-bottom:2em;
+}
+
+
+.rubrik { /* Positionerar rubrik texten i start hemsidan*/
+	position:absolute;
+	bottom:5em;
+	right:0;
+	left:0;
+	margin:auto;
+}
+
+.button, button { 
+	margin-top:2em;
+    border: 2px solid #e7e7e7;
+    border-radius:0.2em;
+    color: #ffffff;
+    background-color:transparent;
+    padding: 1em 2em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size:1em;
+    transition: 0.5s ease;
+    border-radius
+}
+
+button:hover, .button:hover {
+	background-color:#e7e7e7;
+	color:#111111;
+}
+
+#pris .block {
+    box-sizing: border-box;
+    width:24%;
+    display:inline-flex;
+    float:left;
+    margin-right:0.5em;
+}
+
+#pris .block img {
+    width:100%;
+    max-width:100%;
+    border-radius: .3em;
+}
