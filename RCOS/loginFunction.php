@@ -11,7 +11,7 @@ session_start();
 
         if($uid == $user_test[0] && $pwd == $user_test[1])
         {
-            header("Location: profilepage.html");
+            header("Location: profilepage.php");
             exit();
         }
     }
