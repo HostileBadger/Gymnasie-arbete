@@ -32,5 +32,8 @@ nav {
 
 img { /* Sköter bildstorleken på bildomslagen*/
     max-width:100%;
-    border-radius: .1em;
+    border-radius: .3em;
+}
+.svg-icon{
+    width: 5%;
 }
