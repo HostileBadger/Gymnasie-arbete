@@ -43,3 +43,16 @@ body { /* Sköter inställningarna för texten på hemsidan */
     max-width:100%;
     border-radius: .3em;
 }
+
+#pris .block1 {
+    box-sizing: border-box;
+    width:25.2%;
+    display:inline-flex;
+    float:left;
+    margin-right:0.5em;
+}
+
+#pris .block1 img { /* Gör så att bilderna inte stackar ovanpå varandra */
+    width:100%;
+    max-width:100%;
+    border-radius: .3em;
