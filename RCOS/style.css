@@ -6,40 +6,33 @@ body {
     background-color:#ffffff;
 }
 
+nav {
+    position:relative;
+}
  
-#main {
-	height:40em;
+.section {
+	height:35em;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-image:url("pics/Jurassic.jpg");
-	text-align:center;
-	color:#ffffff;
-	position:relative;
 }
 
-#main h2 {
-    margin-bottom:2em;
+#main {
+    padding-top: 50px;
 }
 
 
 .rubrik { /* Positionerar rubrik texten i start hemsidan*/
 	position:absolute;
-	bottom:5em;
+	bottom:15em;
 	right:0;
 	left:0;
 	margin:auto;
 }
 
-#pris .block {
-    box-sizing: border-box;
-    width:24%;
-    display:inline-flex;
-    float:left;
-    margin-right:0.5em;
+img {
+    max-width:100%;
+    border-radius: .1em;
 }
 
-#pris .block img {
-    width:100%;
-    max-width:100%;
-    border-radius: .3em;
-}
+#img_card
