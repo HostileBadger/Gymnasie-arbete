@@ -1,4 +1,4 @@
-body {
+body { /* Sköter inställningarna för texten på hemsidan */
     font-size:16px;
     margin:0;
     padding:0;
@@ -7,17 +7,17 @@ body {
 }
 
  
-#main {
+#main { /* Koden för bilden på vår startsida och texten som står på startsida bilden */
 	height:40em;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-image:url("pics/Jurassic.jpg");
 	text-align:center;
-	color:#ffffff;
+    color:#ffffff;
 	position:relative;
 }
 
-#main h2 {
+#main h2 { /* Tar hand vart texten är på startsidan */
     margin-bottom:2em;
 }
 
@@ -30,7 +30,7 @@ body {
 	margin:auto;
 }
 
-#pris .block {
+#pris .block { /* Sköter bild storlekarna på de andra film omslagen */
     box-sizing: border-box;
     width:24%;
     display:inline-flex;
@@ -38,7 +38,7 @@ body {
     margin-right:0.5em;
 }
 
-#pris .block img {
+#pris .block img { /* Gör så att bilderna inte stackar ovanpå varandra */
     width:100%;
     max-width:100%;
     border-radius: .3em;
