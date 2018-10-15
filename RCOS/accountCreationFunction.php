@@ -30,6 +30,6 @@
     fwrite($myfile, $txt);
 
     echo "Account creation successful!<br> Going to login page.";
-    header("Location: index.html");
+    header("Location: index.php");
     exit();
  ?>

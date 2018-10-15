@@ -34,6 +34,7 @@ if ($result->num_rows > 0)
 
 if($user_pwd == $_POST["pwd"])
 {
+    $_SESSION["isLogedIn"] = true;
     header("Location: profilepage.php");
 }
 else

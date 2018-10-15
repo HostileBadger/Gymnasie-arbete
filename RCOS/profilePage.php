@@ -17,26 +17,9 @@
 </head>
 
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper navbar-fixed red darken-1">
-            <a href="index.html" class="brand-logo center hide-on-med-and-down" id="logo"><img src="http://purepng.com/public/uploads/large/purepng.com-popcornpopcorncorndent-cornflint-corn-1411528651430gpsc3.png" alt=""></a>            
-        <ul class="left">
-          <li class="nuvarande"><a href="hem.html">Hem</a></li>
-          <li><a href="boka.html">Boka</a></li>
-          <li><a href="meny.html">Filmer</a></li>
-          <li><a href="galleri.html">Nyheter</a></li>
-          <li><a href="kontakta.html">Medlem</a></li>
-        </ul>
-        <ul class="right">
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Sign up</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
  
   <?php
+  include "navBar.php";
   include "profilePageDataBase.php";
 ?>
 

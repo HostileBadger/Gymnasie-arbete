@@ -1,5 +1,4 @@
 <?php
-session_start();
 /////CONNECTING TO DATABASE//////////////////////
 $servername = "";
 $username = "root";
