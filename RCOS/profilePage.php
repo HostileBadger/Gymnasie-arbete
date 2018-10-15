@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,7 +37,7 @@
   </div>
  
   <?php
-  include "profilePage1.php";
+  include "profilePageDataBase.php";
 ?>
 
 <footer class="page-footer">
