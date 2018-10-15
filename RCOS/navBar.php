@@ -13,16 +13,16 @@
         <ul class="right">
         <?php
         session_start();
-        if($_SESSION["isLogedIn"] == false)
+        if($_SESSION["isLogedIn"] == true)
+        {
+          echo "<li><a href=" . "profilePage.php" . ">Profile Page</a></li>";
+          echo "<li><a href=" . "logOut.php" . ">Log Out</a></li>";
+        }
+        else
         {
           echo
           "<li><a href=" . "logginPage.php" . ">Log in</a></li>
           <li><a href=" . "accountCreationPage.php" . ">Sign up</a></li>";
-        }
-        else if($_SESSION["isLogedIn"] == true)
-        {
-          echo "<li><a href=" . "profilePage.php" . ">Profile Page</a></li>";
-          echo "<li><a href=" . "logOut.php" . ">Log Out</a></li>";
         }
         ?>
         </ul>
