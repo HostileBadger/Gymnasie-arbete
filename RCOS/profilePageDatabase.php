@@ -12,8 +12,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
-$user =  $_SESSION["user"];
-$sql = "SELECT user_first, user_last, user_email, user_dob, user_uid FROM users WHERE user_uid='" . $user . "'";
+$sql = "SELECT user_first, user_last, user_email, user_dob, user_uid FROM users WHERE user_uid='" . $_SESSION["user"] . "'";
 //$identification = 0;
 //$sql = "SELECT user_first, user_last, user_email, user_dob, user_uid FROM users WHERE user_uid=" . $identification;
 $result = $conn->query($sql);

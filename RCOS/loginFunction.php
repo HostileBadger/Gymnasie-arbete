@@ -1,21 +1,43 @@
 <?php
+/////CONNECTING TO DATABASE//////////////////////
+$servername = "";
+$username = "root";
+$password = "";
+$dbname = "gymnasie-arbete";
 session_start();
-    $user_data = file_get_contents("users.txt");
-    $user_array = explode(" ", $user_data);
-    $uid = $_POST["uid"];
-    $_SESSION["user"] = $uid;
-    $pwd =  $_POST["pwd"];
-    foreach ($user_array as $key => $value)
+$_SESSION["user"] = $_POST["uid"];
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+//Sends a Query to select the variable "user_pwd" from the table "users" from the row with the variable
+//"user_uid" set to the same as what was used to attempt the login.
+$sql = "SELECT user_pwd FROM users WHERE user_uid='" . $_POST["uid"] . "'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0)
+{
+    // output data of each row
+    while($row = $result->fetch_assoc())
     {
-        $user_test = explode(":", $user_array[$key]);
-
-        if($uid == $user_test[0] && $pwd == $user_test[1])
-        {
-            header("Location: profilepage.php");
-            exit();
-        }
+        $user_pwd = $row["user_pwd"];
+        /*echo ";used pw: ";
+        echo $_POST["pwd"];
+        echo ";found pw: ";
+        echo $row["user_pwd"];*/
     }
+} else {
+    echo "0 results";
+}
 
+if($user_pwd == $_POST["pwd"])
+{
+    header("Location: profilepage.php");
+}
+else
+{
     echo "Access Denied";
-    exit();
- ?>
+}
+?>
