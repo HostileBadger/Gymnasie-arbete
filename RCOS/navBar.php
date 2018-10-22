@@ -12,18 +12,19 @@
         
         <ul class="right">
         <?php
-        session_start();
-        if($_SESSION["isLogedIn"] == true)
+        function logginCheck()
         {
-          echo "<li><a href=" . "profilePage.php" . ">Profile Page</a></li>";
-          echo "<li><a href=" . "logOut.php" . ">Log Out</a></li>";
+          if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false) {
+            echo "<li><a href=" . "logginPage.php" . ">Log in</a></li>";
+            echo "<li><a href=" . "accountCreationPage.php" . ">Sign up</a></li>";
+          }
+          else
+          {
+            echo "<li><a href=" . "profilePage.php" . ">Profile Page</a></li>";
+            echo "<li><a href=" . "logOut.php" . ">Log Out</a></li>";
+          }
         }
-        else
-        {
-          echo
-          "<li><a href=" . "logginPage.php" . ">Log in</a></li>
-          <li><a href=" . "accountCreationPage.php" . ">Sign up</a></li>";
-        }
+        logginCheck()
         ?>
         </ul>
       </div>
