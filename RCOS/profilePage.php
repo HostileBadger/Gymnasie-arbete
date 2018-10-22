@@ -15,48 +15,13 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <title>Profile Page</title>
 </head>
+
 <body>
-  <div class="navbar-fixed">
-    <nav>
-      <div class="nav-wrapper navbar-fixed red darken-1">
-        <a href="#" class="brand-logo center hide-on-med-and-down">Logo</a>
-        <ul class="left">
-          <li class="nuvarande"><a href="hem.html">Hem</a></li>
-          <li><a href="boka.html">Boka</a></li>
-          <li><a href="meny.html">Filmer</a></li>
-          <li><a href="galleri.html">Nyheter</a></li>
-          <li><a href="kontakta.html">Medlem</a></li>
-        </ul>
-        <ul class="right">
-            <li><a href="#">Log in</a></li>
-            <li><a href="#">Sign up</a></li>
-        </ul>
-      </div>
-    </nav>
-  </div>
  
-<table>
-<tr>
-    <td>Name</td>
-    <td>?</td>
-</tr>
-<tr>
-    <td>Last name</td>
-    <td>?</td>
-</tr>
-<tr>
-    <td>Username</td>
-    <td>?</td>
-</tr>
-<tr>
-    <td>E-mail</td>
-    <td>?</td>
-</tr>
-<tr>
-    <td>Age</td>
-    <td>?</td>
-</tr>
-</table>
+  <?php
+  include "navBar.php";
+  include "profilePageDataBase.php";
+?>
 
 <footer class="page-footer">
         <div class="container">

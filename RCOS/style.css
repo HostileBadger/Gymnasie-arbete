@@ -1,4 +1,5 @@
-body { /* Sköter inställningarna för texten på hemsidan */
+body 
+{ /* Sköter inställningarna för texten på hemsidan */
     font-size:16px;
     margin:0;
     padding:0;
@@ -6,23 +7,31 @@ body { /* Sköter inställningarna för texten på hemsidan */
     background-color:#ffffff;
 }
 
-nav {
+nav 
+{
     position:relative;
 }
  
+<<<<<<< HEAD
 .section { /* Sköter koden för startbilden på sidan*/
+=======
+.section 
+{
+>>>>>>> 1d6f5111b767bb29708aa63afb54ad2e63381734
 	height:35em;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-image:url("pics/Jurassic.jpg");
 }
 
-#main {
+#main 
+{
     padding-top: 50px;
 }
 
 
-.rubrik { /* Positionerar rubrik texten i start hemsidan*/
+.rubrik 
+{ /* Positionerar rubrik texten i start hemsidan*/
 	position:absolute;
 	bottom:15em;
 	right:0;
@@ -30,10 +39,27 @@ nav {
 	margin:auto;
 }
 
+<<<<<<< HEAD
 img { /* Sköter bildstorleken på bildomslagen*/
+=======
+img 
+{
+>>>>>>> 1d6f5111b767bb29708aa63afb54ad2e63381734
     max-width:100%;
-    border-radius: .3em;
+    border-radius: .2em;
 }
-.svg-icon{
+.svg-icon
+{
     width: 5%;
 }
+
+#logo
+{
+    width:3%;
+}
+.Tidtabell
+{
+    font-size: 80%;
+    padding: 5%;
+}
+

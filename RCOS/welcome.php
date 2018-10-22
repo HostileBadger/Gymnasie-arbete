@@ -9,17 +9,25 @@
 <body>
     <?php
 
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        if ($_SERVER["REQUEST_METHOD"] == "POST") 
+        {
             $username = $_POST["name"];
             $password = $_POST["password"];
 
-            if ($username == 'hej123' && $password == '123') {
+            if ($username == 'hej123' && $password == '123') 
+            {
                 echo 'Välkommen,' , $username , '!';
                 laddaupp();
-            } else {
+            } 
+            
+            else 
+            {
                 echo 'fel användarnamn/lösenord!';
             }
-        } else {
+        } 
+        
+        else 
+        {
             echo 'Ange användarnamn och lösenord!';
         }
 
