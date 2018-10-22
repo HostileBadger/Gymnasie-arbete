@@ -30,6 +30,10 @@
 
   <section id="pris">
     <div class="container">
+
+      <div class="video-container">
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/pzD9zGcUNrw" frameborder="0" allowfullscreen></iframe>
+      </div>
       <h1 class="red-text text-darken-1">Popular now</h1>
       <div class="row">
         <div class="col s3">
