@@ -1,6 +1,6 @@
 <?php
 /////CONNECTING TO DATABASE//////////////////////
-$servername = "";
+$servername = "10.32.35.232";
 $username = "root";
 $password = "";
 $dbname = "gymnasie-arbete";
