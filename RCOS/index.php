@@ -17,7 +17,7 @@
 </head>
 <body>
   <?php
-  include "navBar.php";
+    include "navBar.php";
   ?>
   <div class="section">
     <div class="container rubrik">
