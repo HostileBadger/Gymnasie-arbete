@@ -13,7 +13,6 @@ $user_email = $_POST["user_email"];
 $user_dob = $_POST["user_dob"];
 $user_pwd = $_POST["user_pwd"];
 
-//FÖRSÖK FIXA!
 //Email validation
 if (!filter_var($user_email, FILTER_VALIDATE_EMAIL))
 {
