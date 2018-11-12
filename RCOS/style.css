@@ -12,12 +12,8 @@ nav
     position:relative;
 }
  
-<<<<<<< HEAD
-.section { /* Sköter koden för startbilden på sidan*/
-=======
 .section 
 {
->>>>>>> 1d6f5111b767bb29708aa63afb54ad2e63381734
 	height:35em;
 	background-size:cover;
 	background-repeat:no-repeat;
@@ -39,12 +35,8 @@ nav
 	margin:auto;
 }
 
-<<<<<<< HEAD
-img { /* Sköter bildstorleken på bildomslagen*/
-=======
 img 
 {
->>>>>>> 1d6f5111b767bb29708aa63afb54ad2e63381734
     max-width:100%;
     border-radius: .2em;
 }
@@ -62,3 +54,4 @@ img
     font-size: 80%;
     padding: 5%;
 }
+
