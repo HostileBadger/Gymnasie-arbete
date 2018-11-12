@@ -3,7 +3,7 @@
 <?php include "head.php"?>
     <body>
     <?php include "navBar.php"?>
-    <div class="Signupform">
+    <div class="signupform">
         <h1>Create new account</h1>
         <form method="post" action="accountCreationFunction.php">
         <input type="text" name="user_first" placeholder="First name" required>
@@ -26,7 +26,7 @@
         <form method="post" action="logginPage.php">
             <button type="submit" name="submit">Sign in to existing account</button>
         </form>
-        </div>
+    </div>
         <?php include "footer.php"?>
     </body>
 </html>

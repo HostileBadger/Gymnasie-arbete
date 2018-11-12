@@ -55,4 +55,12 @@ img
     padding: 5%;
 }
 
+button
+{
+    background: #e53935;
+}
 
+.signupform
+{
+    margin: 3%;
+}
