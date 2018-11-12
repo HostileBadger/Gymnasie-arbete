@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,9 +16,14 @@
               
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </head>
+=======
+<?php 
+    include "head.php";
+?>
+>>>>>>> 59b1151d80db3a74d91acaf9fe4c28808ffbf421
 <body>
   <?php
-    include "navBar.php";
+    include "navBar.php";  
   ?>
   <div class="section">
     <div class="container rubrik">
@@ -47,6 +53,7 @@
       </div>
     </div>
   </section>
+<<<<<<< HEAD
 
   
   <footer class="page-footer">
@@ -106,5 +113,10 @@
     </div>
   </footer>
     
+=======
+  <?php 
+    include "footer.php";
+  ?>  
+>>>>>>> 59b1151d80db3a74d91acaf9fe4c28808ffbf421
 </body>
 </html>
