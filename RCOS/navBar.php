@@ -1,7 +1,7 @@
 <div class="navbar-fixed">
     <nav>
       <div class="nav-wrapper navbar-fixed red darken-1">
-        <a href="index.php" class="brand-logo center hide-on-med-and-down" id="logo"><p>RCOS</p><img src="http://purepng.com/public/uploads/large/purepng.com-popcornpopcorncorndent-cornflint-corn-1411528651430gpsc3.png" alt="Picture"></a>
+        <a href="index.php" class="brand-logo center hide-on-med-and-down" id="logo"><img src="http://purepng.com/public/uploads/large/purepng.com-popcornpopcorncorndent-cornflint-corn-1411528651430gpsc3.png" alt="Picture"></a>
         <ul class="left">
           <li class="nuvarande"><a href="index.php">Hem</a></li> <!-- Navbar -->
           <li><a href="boka.php">Boka</a></li> <!-- Navbar -->
