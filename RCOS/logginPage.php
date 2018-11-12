@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php include "head.php"?>
     <body>
+    <?php include "navBar.php"?>
         <form method="post" action="index.php">
             <button type="submit" name="submit">Home</button>
         </form>
@@ -16,5 +18,6 @@
         <form method="post" action="accountCreationPage.php">
             <button type="submit" name="submit">Create new account</button>
         </form>
+        <?php include "footer.php"?>
     </body>
 </html>
