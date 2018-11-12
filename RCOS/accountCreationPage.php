@@ -6,8 +6,18 @@
         </form>
         <h1>Create new account</h1>
         <form method="post" action="accountCreationFunction.php">
-            <input type="text" name="uid" placeholder="New Username">
-            <input type="password" name="pwd" placeholder="New Password">
+            <input type="text" name="user_uid" placeholder="Username" required>
+            <br>
+            <input type="password" name="user_pwd" placeholder="Password" required>
+            <br>
+            <input type="text" name="user_first" placeholder="First name" required>
+            <br>
+            <input type="text" name="user_last" placeholder="Last name" required>
+            <br>
+            <input type="text" name="user_email" placeholder="E-mail" required>
+            <br>
+            <input type="date" name="user_dob" placeholder="DoB" required>
+            <br>
             <button type="submit" name="submit">Create account</button>
         </form>
 

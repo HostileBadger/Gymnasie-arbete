@@ -9,7 +9,8 @@ $_SESSION["user"] = $_POST["uid"];
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
 // Check connection
-if ($conn->connect_error) {
+if ($conn->connect_error)
+{
     die("Connection failed: " . $conn->connect_error);
 }
 //Sends a Query to select the variable "user_pwd" from the table "users" from the row with the variable
@@ -24,15 +25,19 @@ if ($result->num_rows > 0)
     {
         $user_pwd = $row["user_pwd"];
     }
-} else {
+}
+
+else
+{
     echo "0 results";
 }
 
-if($user_pwd == $_POST["pwd"])
+if($user_pwd == $_POST["user_pwd"])
 {
     $_SESSION["isLoggedIn"] = true;
     header("Location: profilepage.php");
 }
+
 else
 {
     echo "Access Denied";

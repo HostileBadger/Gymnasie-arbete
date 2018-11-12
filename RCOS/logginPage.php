@@ -7,7 +7,7 @@
         <h1>Sign in to existing account</h1>
         <form method="post" action="loginFunction.php">
             <input type="text" name="uid" placeholder="Username">
-            <input type="password" name="pwd" placeholder="Password">
+            <input type="password" name="user_pwd" placeholder="Password">
             <button type="submit" name="submit">Login</button>
         </form>
 
