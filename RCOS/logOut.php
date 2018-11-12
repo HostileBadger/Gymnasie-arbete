@@ -1,5 +1,5 @@
 <?php
     session_start();
-    $_SESSION["isLogedIn"] = false;
+    $_SESSION["isLoggedIn"] = false;
     header("Location: index.php");
 ?>

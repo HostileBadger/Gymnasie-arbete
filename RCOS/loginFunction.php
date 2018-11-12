@@ -23,10 +23,6 @@ if ($result->num_rows > 0)
     while($row = $result->fetch_assoc())
     {
         $user_pwd = $row["user_pwd"];
-        /*echo ";used pw: ";
-        echo $_POST["pwd"];
-        echo ";found pw: ";
-        echo $row["user_pwd"];*/
     }
 } else {
     echo "0 results";

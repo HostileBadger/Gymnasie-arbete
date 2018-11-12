@@ -1,5 +1,4 @@
 <?php
-session_start();
 /////CONNECTING TO DATABASE//////////////////////
 $servername = "10.32.35.232";
 $username = "root";
@@ -14,8 +13,6 @@ if ($conn->connect_error)
     die("Connection failed: " . $conn->connect_error);
 }
 $sql = "SELECT user_first, user_last, user_email, user_dob, user_uid FROM users WHERE user_uid='" . $_SESSION["user"] . "'";
-//$identification = 0;
-//$sql = "SELECT user_first, user_last, user_email, user_dob, user_uid FROM users WHERE user_uid=" . $identification;
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0)
