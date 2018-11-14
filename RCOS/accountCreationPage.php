@@ -2,13 +2,8 @@
 <html>
 <?php include "head.php" ?>
     <body>
-<<<<<<< HEAD
     <?php include "navBar.php" ?>
     <div id="signupform">
-=======
-    <?php include "navBar.php"?>
-    <div class="signupform">
->>>>>>> 5ee7daa58c7604169609013c8159ce092e9b19a8
         <h1>Create new account</h1>
         <form method="post" action="accountCreationFunction.php">
         <input type="text" name="user_first" placeholder="First name" required>
@@ -31,11 +26,6 @@
         <form method="post" action="logginPage.php">
             <button type="submit" name="submit">Sign in to existing account</button>
         </form>
-<<<<<<< HEAD
         <?php include "footer.php" ?>
-=======
-    </div>
-        <?php include "footer.php"?>
->>>>>>> 5ee7daa58c7604169609013c8159ce092e9b19a8
     </body>
 </html>

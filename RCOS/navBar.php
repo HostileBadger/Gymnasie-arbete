@@ -12,8 +12,6 @@
         
         <ul class="right">
         <?php
-        function logginCheck()
-        {
           if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false)
           {
             echo "<li><a href=" . "logginPage.php" . ">Log in</a></li>";
@@ -24,8 +22,7 @@
             echo "<li><a href=" . "profilePage.php" . ">Profile Page</a></li>";
             echo "<li><a href=" . "logOut.php" . ">Log Out</a></li>";
           }
-        }
-        logginCheck()
+        
         ?>
         </ul>
       </div>
