@@ -54,5 +54,14 @@ img
     font-size: 80%;
     padding: 5%;
 }
+#signupform
+{
+    color: red;
+    padding: 3%;
+}
 
+button
+{
+    background: rgb(229,57,53);
+}
 

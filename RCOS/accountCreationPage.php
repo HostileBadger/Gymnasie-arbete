@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<?php include "head.php"?>
+<?php include "head.php" ?>
     <body>
-    <?php include "navBar.php"?>
-    <div class="Signupform">
+    <?php include "navBar.php" ?>
+    <div id="signupform">
         <h1>Create new account</h1>
         <form method="post" action="accountCreationFunction.php">
         <input type="text" name="user_first" placeholder="First name" required>
@@ -20,13 +20,12 @@
             <br>
             <button type="submit" name="submit">Create account</button>
         </form>
-
+    </div>
         <br>
         
         <form method="post" action="logginPage.php">
             <button type="submit" name="submit">Sign in to existing account</button>
         </form>
-        </div>
-        <?php include "footer.php"?>
+        <?php include "footer.php" ?>
     </body>
 </html>
