@@ -54,10 +54,19 @@ img
     font-size: 80%;
     padding: 5%;
 }
+#signupform
+{
+    color: red;
+    padding: 3%;
+}
 
 button
 {
+<<<<<<< HEAD
+    background: rgb(229,57,53);
+=======
     background: #e53935;
+>>>>>>> 5ee7daa58c7604169609013c8159ce092e9b19a8
 }
 
 .signupform
