@@ -12,7 +12,6 @@
         
         <ul class="right">
         <?php
-        session_start();
         function logginCheck()
         {
           if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false)

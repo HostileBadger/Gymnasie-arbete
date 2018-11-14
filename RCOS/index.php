@@ -3,6 +3,7 @@
 <?php include "head.php"?>
 <body>
   <?php
+  session_start();
     include "navBar.php";
   ?>
   <div class="section">
