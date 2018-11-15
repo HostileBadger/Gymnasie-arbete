@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php include "header.php"?>
+    <?php include "header.php"?>
     <body>
-    <?php include "navBar.php"?>
+        <?php include "navBar.php"?>
         <form method="post" action="index.php">
             <button type="submit" name="submit">Home</button>
         </form>

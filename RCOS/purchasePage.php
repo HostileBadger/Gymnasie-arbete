@@ -28,7 +28,8 @@
                     //Outputs movie titles in a row as klickable buttons that, when klicked, will expand and show you available times for the movie.
                     echo "<button >$movie_name</button> <br>";
                 }
-            } else {
+            } else 
+            {
                 echo "0 results";
             }
         ?>
