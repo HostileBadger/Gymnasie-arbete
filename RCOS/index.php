@@ -3,14 +3,13 @@
 <?php include "head.php"?>
 <body>
   <?php
-  session_start();
     include "navBar.php";
   ?>
   <div class="section">
     <div class="container rubrik">
       <h1 class="header center white-text">Ant man and the Wasp</h1>
       <div class="center">
-        <a class="red darken-1 waves-effect waves-light btn-large transparent" href="boka.php">Köp biljett</a>
+        <a class="red darken-1 waves-effect waves-light btn-large transparent" href="purchasePage.php">Purchase Ticket</a>
       </div>
     </div>
   </div>

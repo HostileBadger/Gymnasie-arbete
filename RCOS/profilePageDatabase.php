@@ -49,7 +49,7 @@ echo "<table>
     <td>$user_email</td>
 </tr>
 <tr>
-    <td>DoB</td>
+    <td>Age</td>
     <td>$user_dob</td>
 </tr>
 </table>";
