@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<?php include "head.php"?>
+<?php include "header.php"?>
     <body>
     <?php include "navBar.php"?>
         <form method="post" action="index.php">
