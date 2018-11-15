@@ -4,7 +4,7 @@
         <a href="index.php" class="brand-logo center hide-on-med-and-down" id="logo"><img src="http://purepng.com/public/uploads/large/purepng.com-popcornpopcorncorndent-cornflint-corn-1411528651430gpsc3.png" alt="Picture"></a>
         <ul class="left">
           <li class="nuvarande"><a href="index.php">Home</a></li> <!-- Navbar -->
-          <li><a href="purchase.php">Booking</a></li> <!-- Navbar -->
+          <li><a href="purchasePage.php">Booking</a></li> <!-- Navbar -->
           <li><a href="menu.php">Movies</a></li> <!-- Navbar -->
           <li><a href="gallery.php">News</a></li> <!-- Navbar -->
           <li><a href="contact.php">Contact us</a></li> <!-- Navbar -->
