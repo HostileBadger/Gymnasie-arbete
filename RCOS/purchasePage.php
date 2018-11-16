@@ -26,7 +26,7 @@
                 {
                     $movie_name = $row["movie_name"];
                     //Outputs movie titles in a row as klickable buttons that, when klicked, will expand and show you available times for the movie.
-                    echo "<button >$movie_name</button> <br>";
+                    echo "<button class='ticket_info_buttons';>$movie_name</button> <br>";
                 }
             } else 
             {
