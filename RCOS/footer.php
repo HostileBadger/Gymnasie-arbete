@@ -1,58 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="http://purepng.com/public/uploads/large/purepng.com-popcornpopcorncorndent-cornflint-corn-1411528651430gpsc3.png" alt="">
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Royal Cinema of Sweden</title>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-               
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-</head>
-<body>
-  <?php
-    include "navBar.php";
-  ?>
-  <div class="section">
-    <div class="container rubrik">
-      <h1 class="header center white-text">Ant man and the Wasp</h1>
-      <div class="center">
-        <a class="red darken-1 waves-effect waves-light btn-large transparent" href="boka.php">Köp biljett</a>
-      </div>
-    </div>
-  </div>
-
-  <section id="pris">
-    <div class="container">
-      <div class="video-container">
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/pzD9zGcUNrw" frameborder="0" allowfullscreen></iframe>
-      </div>
-      <h1 class="red-text text-darken-1">Popular now</h1>
-      <div class="row">
-        <div class="col s3">
-          <a target="_blank" href="#"><img alt="gastrogate.png" src="pics/Brexit_Metaphor.jpg" class="z-depth-2"></a>
-        </div>
-        <div class="col s3">
-          <a target="_blank" href="#"><img alt="tripadvisor-icon.png" src="pics/12 Strong.jpg" class="z-depth-2"></a>
-        </div>
-        <div class="col s3">
-          <a target="_blank" href="#"><img alt="yelp.png" src="pics/blade.jpg" class="z-depth-2"></a>
-        </div>
-        <div class="col s3">
-          <a target="_blank" href="#"><img alt="yelp.png" src="pics/The Nun.png" class="z-depth-2"></a>
-        </div>    
-      </div>
-    </div>
-  </section>
-
-  
-  <footer class="page-footer">
+<footer class="page-footer">
       <div class="container">
         <div class="row">
           <div class="col l6 s12">
@@ -108,6 +54,3 @@
         </div>
       </div>
     </footer>
-    
-</body>
-</html>

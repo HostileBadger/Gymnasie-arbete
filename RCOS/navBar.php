@@ -14,8 +14,7 @@
         <?php
         function logginCheck()
         {
-          if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false)
-          {
+          if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false) {
             echo "<li><a href=" . "logginPage.php" . ">Log in</a></li>";
             echo "<li><a href=" . "accountCreationPage.php" . ">Sign up</a></li>";
           }
@@ -30,4 +29,4 @@
         </ul>
       </div>
     </nav>
-  </div>
+</div>

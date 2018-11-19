@@ -16,5 +16,7 @@
         <form method="post" action="accountCreationPage.php">
             <button type="submit" name="submit">Create new account</button>
         </form>
+
+        
     </body>
 </html>
