@@ -1,3 +1,4 @@
+<script type="text/javascript" src="accountCreationValidation.js"></script>;
 <?php
 //GÖR SÅ ATT EN JAVASCRIPT KOD KÖRS, SOM KONOTROLERAR ATT ALL INPUT ÄR GODKÄND, INGA FORMAT FEL OCH INTE SQL INJECTION ETC.
 /////CONNECTING TO DATABASE//////////////////////
@@ -13,15 +14,6 @@ $user_last = $_POST["user_last"];
 $user_email = $_POST["user_email"];
 $user_dob = $_POST["user_dob"];
 $user_pwd = $_POST["user_pwd"];
-
-//FÖRSÖK FIXA!
-//Email validation
-if (!filter_var($user_email, FILTER_VALIDATE_EMAIL))
-{
-    echo("$user_email is not a valid email address");
-    echo "<br>";
-}
-
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
