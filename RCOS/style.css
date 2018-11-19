@@ -91,3 +91,21 @@ button{
     border-radius: 1px;
     box-shadow:grey 2px 2px 5px;
 }
+
+.video-container {
+    margin:40px 40px 40px 40px;
+}
+
+#boka {
+    height:400px;
+    position:relative;
+}
+
+#boka #film {
+    background-color:red;
+    height:100px;
+    width:100px;
+    position:absolute;
+    top:15px;
+    left:15px;
+}
