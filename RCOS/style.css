@@ -86,3 +86,21 @@ button{
     background-color: red;
     color: white;
 }
+
+.video-container {
+    margin:40px 40px 40px 40px;
+}
+
+#boka {
+    height:400px;
+    position:relative;
+}
+
+#boka #film {
+    background-color:red;
+    height:100px;
+    width:100px;
+    position:absolute;
+    top:15px;
+    left:15px;
+}
