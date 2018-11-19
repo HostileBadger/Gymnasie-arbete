@@ -9,7 +9,7 @@ body
 
 nav 
 {
-    position:relative;
+    position: relative;
 }
  
 .section 
@@ -47,7 +47,9 @@ img
 
 #logo
 {
-    width: 3%;
+    width: 6%;
+    position: absolute;
+    margin-left: 50%;
 }
 .Tidtabell
 {
@@ -56,20 +58,28 @@ img
 }
 #signupform
 {
+    border-style: solid, transparent;
+    width: 50%;
     color: red;
     padding: 3%;
+    
 }
 
 button
 {
-<<<<<<< HEAD
     background: rgb(229,57,53);
-=======
-    background: #e53935;
->>>>>>> 5ee7daa58c7604169609013c8159ce092e9b19a8
+    border: none;
+    padding: 5px;
+    color: white;
+    font-family: Italic;
 }
-
-.signupform
+.RCOS-logo
 {
-    margin: 3%;
+    position: absolute;
+    margin-left: -200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: rgb(255, 118, 118) ;
+    background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+
 }
