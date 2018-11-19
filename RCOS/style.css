@@ -56,6 +56,7 @@ img
     font-size: 80%;
     padding: 5%;
 }
+<<<<<<< HEAD
 #signupform
 {
     border-style: solid, transparent;
@@ -64,9 +65,12 @@ img
     padding: 3%;
     
 }
+=======
+>>>>>>> 714c4064ecc44bb8aaf3c2e63eb9a8a0a5f41e13
 
-button
+.ticket_info_buttons
 {
+<<<<<<< HEAD
     background: rgb(229,57,53);
     border: none;
     padding: 5px;
@@ -83,3 +87,21 @@ button
     background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
 
 }
+=======
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+>>>>>>> 714c4064ecc44bb8aaf3c2e63eb9a8a0a5f41e13

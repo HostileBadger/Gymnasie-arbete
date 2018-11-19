@@ -26,7 +26,8 @@ if ($result->num_rows > 0)
         $user_dob = $row["user_dob"];
         $user_uid = $row["user_uid"];
     }
-} else {
+} else 
+{
     echo "0 results";
 }
 
