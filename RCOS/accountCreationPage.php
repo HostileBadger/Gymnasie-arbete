@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<?php include "header.php" ?>
-    <body>
-    <?php include "navBar.php" ?>
+<?php include "header.php"?>
+    <body>    
+    <script type="text/javascript" src="accountCreationValidation.js"></script>;
+    <?php include "navBar.php"?>
     <div id="signupform">
         <h1>Create new account</h1>
         <form method="post" action="accountCreationFunction.php">
