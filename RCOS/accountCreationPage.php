@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-    <?php include "header.php"?>
+<?php include "header.php" ?>
     <body>
     <?php include "navBar.php" ?>
     <div id="signupform">
@@ -19,7 +19,7 @@
             <input type="date" name="user_dob" placeholder="DoB" required>
             <br>
             <button type="submit" name="submit">Create account</button>
-        </form>    
+        </form>
         <br>
         
         <form method="post" action="logginPage.php">
