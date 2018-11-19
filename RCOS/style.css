@@ -86,3 +86,7 @@ button{
     background-color: red;
     color: white;
 }
+
+.Movies {
+    max-width: 30%;
+}
