@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
-<?php include "header.php"?>
-    <body>    
-    <script type="text/javascript" src="accountCreationValidation.js"></script>;
-    <?php include "navBar.php"?>
+<script type="text/javascript" src="accountCreationValidation.js"></script>
+<?php include "header.php";?>
+    <body>
+    <?php include "navBar.php";?>
     <div id="signupform">
         <h1>Create new account</h1>
-        <form method="post" action="accountCreationFunction.php">
+        <form id="test" method="post" action="accountCreationFunction.php">
             <input type="text" name="user_uid" placeholder="Username" required>
             <br>
             <input type="password" name="user_pwd" placeholder="Password" required>
@@ -28,5 +28,21 @@
         </form>
         </div>
         <?php include "footer.php" ?>
+
+
+<!--------->
+
+<h2>JavaScript addEventListener()</h2>
+
+<p>This example uses the addEventListener() method to attach a click event to a button.</p>
+
+<input id="myBtn" type="text" name="user_uid" placeholder="Username" required>
+
+<p id="demo"></p>
+
+<script type="text/javascript" src="accountCreationValidation.js"></script>
+
+<!--------->
+
     </body>
 </html>
