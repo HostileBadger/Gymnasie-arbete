@@ -1,4 +1,5 @@
 <?php
+//GÖR SÅ ATT EN JAVASCRIPT KOD KÖRS, SOM KONOTROLERAR ATT ALL INPUT ÄR GODKÄND, INGA FORMAT FEL OCH INTE SQL INJECTION ETC.
 /////CONNECTING TO DATABASE//////////////////////
 $servername = "10.32.35.232";
 $username = "root";
