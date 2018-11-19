@@ -10,9 +10,7 @@
             <input type="password" name="pwd" placeholder="Password">
             <button type="submit" name="submit">Login</button>
         </form>
-
         <br>
-
         <form method="post" action="accountCreationPage.php">
             <button type="submit" name="submit">Create new account</button>
         </form>

@@ -20,7 +20,6 @@
             <br>
             <button type="submit" name="submit">Create account</button>
         </form>
-    
         <br>
         
         <form method="post" action="logginPage.php">
