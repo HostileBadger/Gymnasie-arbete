@@ -15,9 +15,9 @@ nav
 .section 
 {
 	height:35em;
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-image:url("pics/Jurassic.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-image:url("pics/Jurassic.jpg");
 }
 
 #main 

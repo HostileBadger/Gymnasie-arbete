@@ -41,7 +41,7 @@
 </div>
 </div>
 
-<?php require "footer.php";?>
+<?php require "footer.php"?>
 <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
 </html>
