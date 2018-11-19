@@ -62,7 +62,6 @@ img
     width: 50%;
     color: red;
     padding: 3%;
-    
 }
 
 button
@@ -77,12 +76,18 @@ button
 {
     position: absolute;
     margin-left: -200%;
-    -webkit-background-clip: text;
+    color: rgb(255, 219, 41);
+    text-shadow: rgb(255, 219, 41) 1px 1px 10px;
+    
+    /*-webkit-background-clip: text;
     color: transparent;
-    background-color: rgb(255, 118, 118) ;
+    background-color: rgb(255, 219, 41) ;
     background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+    */
 }
 button{
     background-color: red;
     color: white;
+    border-radius: 1px;
+    box-shadow:grey 2px 2px 5px;
 }
