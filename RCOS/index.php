@@ -19,7 +19,7 @@
       <h1 class="red-text text-darken-1">Popular now</h1>
       <div class="row">
         <div class="col s3">
-          <a target="_blank" href="#"><img alt="gastrogate.png" src="pics/Brexit_Metaphor.jpg" class="z-depth-2"></a>
+          <a target="_blank" href="Brexit Metaphor.php"><img alt="gastrogate.png" src="pics/Brexit_Metaphor.jpg" class="z-depth-2"></a>
         </div>
         <div class="col s3">
           <a target="_blank" href="#"><img alt="tripadvisor-icon.png" src="pics/12 Strong.jpg" class="z-depth-2"></a>

@@ -1,6 +1,5 @@
 //Illegal character check
-echo("hej");
-return;
+console.log("hej");
 
 if(($user_email||$user_pwd||$user_first||$user_last||$user_uid)=="hej")
 {
