@@ -1,5 +1,0 @@
-<<<<<<< HEAD
- hej123:123
-=======
- admin:admin
->>>>>>> d63d1c0e0adda915468a883cd2389e78b7db3631

@@ -1,0 +1,88 @@
+body 
+{ /* Sköter inställningarna för texten på hemsidan */
+    font-size:16px;
+    margin:0;
+    padding:0;
+    font-family: "Helvetica";
+    background-color:#ffffff;
+}
+
+nav 
+{
+    position: relative;
+}
+ 
+.section 
+{
+	height:35em;
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-image:url("pics/Jurassic.jpg");
+}
+
+#main 
+{
+    padding-top: 50px;
+}
+
+
+.rubrik 
+{ /* Positionerar rubrik texten i start hemsidan*/
+	position:absolute;
+	bottom:15em;
+	right:0;
+	left:0;
+	margin:auto;
+}
+
+img 
+{
+    max-width:100%;
+    border-radius: .2em;
+}
+.svg-icon
+{
+    width: 5%;
+}
+
+#logo
+{
+    width: 6%;
+    position: absolute;
+    margin-left: 50%;
+}
+.Tidtabell
+{
+    font-size: 80%;
+    padding: 5%;
+}
+#signupform
+{
+    border-style: solid, transparent;
+    width: 50%;
+    color: red;
+    padding: 3%;
+    
+}
+
+button
+{
+    background: rgb(229,57,53);
+    border: none;
+    padding: 5px;
+    color: white;
+    font-family: Italic;
+}
+.RCOS-logo
+{
+    position: absolute;
+    margin-left: -200%;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-color: rgb(255, 118, 118) ;
+    background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+}
+button{
+    background-color: red;
+    color: white;
+}
