@@ -15,9 +15,9 @@ nav
 .section 
 {
 	height:35em;
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-image:url("pics/Jurassic.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-image:url("pics/Jurassic.jpg");
 }
 
 #main 
@@ -96,10 +96,6 @@ button{
     margin:40px 40px 40px 40px;
 }
 
-<<<<<<< HEAD
-.Movies {
-    max-width: 30%;
-=======
 #boka {
     height:400px;
     position:relative;
@@ -112,5 +108,4 @@ button{
     position:absolute;
     top:15px;
     left:15px;
->>>>>>> 1786799dd41de6aea20bba6904256deaaa4bb814
 }
