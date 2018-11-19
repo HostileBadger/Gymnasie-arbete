@@ -19,7 +19,11 @@
             <input type="date" name="user_dob" placeholder="DoB" required>
             <br>
             <button type="submit" name="submit">Create account</button>
+<<<<<<< HEAD
         </form>
+=======
+        </form>    
+>>>>>>> 7527bcdcdec7fcbb4b20f18d9bf9515c96ea7a9c
         <br>
         
         <form method="post" action="logginPage.php">
