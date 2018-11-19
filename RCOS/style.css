@@ -81,13 +81,8 @@ button
     color: transparent;
     background-color: rgb(255, 118, 118) ;
     background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
-<<<<<<< HEAD
-
-}
-=======
 }
 button{
     background-color: red;
     color: white;
 }
->>>>>>> 7527bcdcdec7fcbb4b20f18d9bf9515c96ea7a9c
