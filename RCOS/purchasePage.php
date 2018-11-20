@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "header.php"?>
+<?php require "header.php";?>
     <body>
         <?php
-            include "navBar.php";
+            require "navBar.php";
             /////CONNECTING TO DATABASE//////////////////////
             $servername = "10.32.35.232";
             $username = "root";
@@ -34,6 +34,6 @@
             }
         ?>
         <h1></h1>
-        <?php include "footer.php" ?>
+        <?php require "footer.php"; ?>
     </body>
 </html>

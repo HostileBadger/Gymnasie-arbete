@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-<?php include "header.php" ?>
+<?php require "header.php";?>
     <body>
-    <?php include "navBar.php" ?>
+    <?php require "navBar.php";?>
     <div id="signupform">
         <h1>Create new account</h1>
         <form method="post" action="accountCreationFunction.php">
@@ -26,6 +26,6 @@
             <button type="submit" name="submit">Sign in to existing account</button>
         </form>
         </div>
-        <?php include "footer.php" ?>
+        <?php require "footer.php"; ?>
     </body>
 </html>
