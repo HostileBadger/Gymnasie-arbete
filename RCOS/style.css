@@ -102,6 +102,21 @@ button:hover{
     margin:40px 40px 40px 40px;
 }
 
+<<<<<<< HEAD
 .Movies {
     max-width: 30%;
+=======
+#boka {
+    height:400px;
+    position:relative;
+}
+
+#boka #film {
+    background-color:red;
+    height:100px;
+    width:100px;
+    position:absolute;
+    top:15px;
+    left:15px;
+>>>>>>> 20a3c5be5b0bc6235c1ec26cac521126ee058ad8
 }

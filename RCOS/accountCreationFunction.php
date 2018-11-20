@@ -1,4 +1,3 @@
-<script type="text/javascript" src="accountCreationValidation.js"></script>;
 <?php
 //GÖR SÅ ATT EN JAVASCRIPT KOD KÖRS, SOM KONOTROLERAR ATT ALL INPUT ÄR GODKÄND, INGA FORMAT FEL OCH INTE SQL INJECTION ETC.
 /////CONNECTING TO DATABASE//////////////////////
