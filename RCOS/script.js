@@ -1,20 +1,14 @@
-M.AutoInit();
-        
-document.addEventListener('DOMContentLoaded', function() {
-    var elems = document.querySelectorAll('.collapsible');
-    var instances = M.Collapsible.init(elems, options);
-  });
-
 console.log('hej');
 
-document.addEventListener('DOMContentLoaded', function() {
-  var elems = document.querySelectorAll('.datepicker');
-  var instances = M.Datepicker.init(elems, options);
-});
-
-// Or with jQuery
-
-$(document).ready(function(){
-  $('.datepicker').datepicker();
-});
-        
+var Calender = document.querySelector('.datepicker');
+var options = {
+  disableWeekends:false,
+  format:'dd mmmm yyyy',
+  showClearBtn:true,
+  disableDayFn: function(date) {
+    if(date == 1 ) {
+      return false;
+    }
+  }
+};
+M.Datepicker.init(Calender, options);
