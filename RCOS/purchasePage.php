@@ -25,12 +25,7 @@
                 while($row = $result->fetch_assoc())
                 {
                     $movie_name = $row["movie_name"];
-                    /*test = "SELECT movie_runtime FROM $movie_name";
-                    $rest = $conn->query($test);                    
-                    $movie_runtime = $row["movie_runtime"];*/
-                    //Outputs movie titles in a row as klickable buttons that, when klicked, will expand and show you available times for the movie.
                     echo "<button class='ticket_info_buttons';>$movie_name</button> <br>";
-                    //echo "<button class='ticket_info_buttons';>$movie_runtime</button> <br>";
                 }
             } else 
             {
