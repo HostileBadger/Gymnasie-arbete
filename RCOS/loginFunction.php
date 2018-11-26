@@ -1,5 +1,5 @@
 <?php
-/////CONNECTING TO DATABASE//////////////////////
+///////CONNECTING TO DATABASE///////
 $servername = "10.32.35.232";
 $username = "root";
 $password = "";
