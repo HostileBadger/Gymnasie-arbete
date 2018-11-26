@@ -97,10 +97,13 @@ button{
 }
 
 #boka #film {
-    background-color:red;
+    background-color:blue;
     height:100px;
-    width:100px;
-    position:absolute;
-    top:15px;
-    left:15px;
+    width:100x;
+    margin:auto;
 }
+
+ span {
+     background-color:blue;
+ }
+
