@@ -17,7 +17,7 @@
             {
                 die("Connection failed: " . $conn->connect_error);
             }
-            $sql = "SELECT DISTINCT movie_name FROM movies";
+            $sql = "SELECT DISTINCT movie_name FROM movies; "
             $result = $conn->query($sql);
             if ($result->num_rows > 0)
             {
