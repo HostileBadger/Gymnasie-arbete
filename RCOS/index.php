@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<?php include "header.php"?>
+<?php require "header.php";?>
 <body>
   <?php
-    include "navBar.php";
+    require "navBar.php";
   ?>
   <div class="section">
     <div class="container rubrik">
@@ -33,6 +33,6 @@
       </div>
     </div>
   </section>
-<?php include "footer.php"?>    
+<?php require "footer.php";?>    
 </body>
 </html>

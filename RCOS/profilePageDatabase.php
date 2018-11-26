@@ -1,4 +1,13 @@
 <?php
+///////Checks if you are logged in. If you are not logged in it will redirect to the loggin page.///////
+if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false)
+{
+    //Not logged in
+    
+    header("Location: logginPage.php");
+}
+////////
+
 /////CONNECTING TO DATABASE//////////////////////
 $servername = "10.32.35.232";
 $username = "root";

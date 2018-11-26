@@ -7,8 +7,8 @@
         <ul class="left">
           <li class="nuvarande"><a href="index.php">Home</a></li> <!-- Navbar -->
           <li><a href="purchasePage.php">Booking</a></li> <!-- Navbar -->
-          <li><a href="menu.php">Movies</a></li> <!-- Navbar -->
-          <li><a href="gallery.php">News</a></li> <!-- Navbar -->
+          <li><a href="Movies.php">Movies</a></li> <!-- Navbar -->
+          <li><a href="News.php">News</a></li> <!-- Navbar -->
           <li><a href="contact.php">Contact us</a></li> <!-- Navbar -->
         </ul>
         
