@@ -1,13 +1,3 @@
-<?php 
-///////Checks if you are logged in. If you are not logged in it will redirect to the loggin page.///////
-if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false)
-{
-    //Not logged in    
-    header("Location: index.php");
-}
-////////
-?>
-
 <!DOCTYPE html>
 <html>
     <?php require "header.php";?>
