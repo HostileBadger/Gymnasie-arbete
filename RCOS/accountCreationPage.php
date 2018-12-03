@@ -31,6 +31,5 @@
 
 <script type="text/javascript" src="accountCreationValidation.js"></script>
 
-
     </body>
 </html>

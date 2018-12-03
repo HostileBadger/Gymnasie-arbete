@@ -1,14 +1,14 @@
 buttonList = document.getElementsByClassName("inputFields");
 alert("buttonList.length=" + buttonList.length);
-nummer = 0;
 for (var i = 0; i < buttonList.length; i++)
 {
     buttonList.item(i).addEventListener("change", displayDate);
 }
 function displayDate() 
 {
-    buttonList.item();
-    document.getElementById("demo").innerHTML = nummer;
+    alert("hej");
+    //buttonList.item();
+    document.getElementById("demo").innerHTML = "hej";
 }
 /*
 //Illegal character check

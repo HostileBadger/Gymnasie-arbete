@@ -1,3 +1,13 @@
+<!--<?php 
+    if(isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"]==null || $_SESSION["isLoggedIn"]==false)
+    {
+        //Not logged in
+    }
+    else if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"]==null || $_SESSION["isLoggedIn"]==false){
+        header("Location: index.php");
+    }
+?>-->
+
 <!DOCTYPE html>
 <html>
     <?php require "header.php";?>
