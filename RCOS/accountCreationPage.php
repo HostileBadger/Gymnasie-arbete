@@ -1,15 +1,9 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
+<script type="text/javascript" src="accountCreationValidation.js"></script>
 <?php require "header.php";?>
     <body>
     <?php require "navBar.php";?>
-=======
-<script type="text/javascript" src="accountCreationValidation.js"></script>
-<?php include "header.php";?>
-    <body>
-    <?php include "navBar.php";?>
->>>>>>> 20a3c5be5b0bc6235c1ec26cac521126ee058ad8
     <div id="signupform">
         <h1>Create new account</h1>
         <form id="test" method="post" action="accountCreationFunction.php">
@@ -33,13 +27,9 @@
             <button type="submit" name="submit">Sign in to existing account</button>
         </form>
         </div>
-<<<<<<< HEAD
-        <?php require "footer.php"; ?>
-=======
         <?php include "footer.php" ?>
 
 
-<!--------->
 
 <h2>JavaScript addEventListener()</h2>
 
@@ -51,8 +41,6 @@
 
 <script type="text/javascript" src="accountCreationValidation.js"></script>
 
-<!--------->
 
->>>>>>> 20a3c5be5b0bc6235c1ec26cac521126ee058ad8
     </body>
 </html>

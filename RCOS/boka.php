@@ -14,6 +14,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 <script src="script.js"></script>
@@ -26,15 +27,47 @@
     <ul class="collapsible">
         <li>
         <div class="collapsible-header"><i class="material-icons">filter_drama</i>Datum</div>
-        <div class="collapsible-body"><input type="text" class="datepicker"></div>
+        <div class="collapsible-body">
+            <div class="input-field">
+            <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+            </select>
+            <label>Välj datum</label>
+            </div>
+        </div>
+        </li>
+
+        <li>
+        <div class="collapsible-header"><i class="material-icons">place</i>Tider</div>
+        <div class="collapsible-body">
+            <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label>Välj tid</label>
+            </div>
+        
+        </div>
+        
         </li>
         <li>
-        <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-        <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Platser</div>
+        <div class="collapsible-body"><span>Film</span>
+        <div class="input-field">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+                <label>Välj plats</label>
+            </div></div>
         </li>
     </ul>
 
