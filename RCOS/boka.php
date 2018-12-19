@@ -32,7 +32,7 @@
         <div class="col s8" id="dropdown">
             <ul class="collapsible">
                 <li>
-                <div class="collapsible-header"><i class="material-icons">filter_drama</i>Datum</div>
+                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                     <select>
@@ -47,7 +47,7 @@
                 </li>
 
                 <li>
-                <div class="collapsible-header"><i class="material-icons">place</i>Tider</div>
+                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                         <select>
@@ -62,7 +62,7 @@
                 
                 </li>
                 <li>
-                <div class="collapsible-header"><i class="material-icons">whatshot</i>Platser</div>
+                <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
                 <div class="collapsible-body"><span>Film</span>
                     <div class="input-field">
                         <select>
