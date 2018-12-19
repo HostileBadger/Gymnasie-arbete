@@ -17,7 +17,7 @@
             {
                 die("Connection failed: " . $conn->connect_error);
             }
-            $sql = "SELECT DISTINCT movie_name FROM movies; "
+            $sql = "SELECT DISTINCT movie_name FROM movies";
             $result = $conn->query($sql);
             if ($result->num_rows > 0)
             {
@@ -25,7 +25,6 @@
                 while($row = $result->fetch_assoc())
                 {
                     $movie_name = $row["movie_name"];
-                    //Outputs movie titles in a row as klickable buttons that, when klicked, will expand and show you available times for the movie.
                     echo "<button class='ticket_info_buttons';>$movie_name</button> <br>";
                 }
             } else 

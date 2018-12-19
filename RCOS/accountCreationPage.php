@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
+<<<<<<< HEAD
 <script type="text/javascript" src="accountCreationValidation.js"></script>
+=======
+>>>>>>> 25a7c13775182e9d35d31ef541baf621b1f16870
 <?php require "header.php";?>
     <body>
     <?php require "navBar.php";?>
     <div id="signupform">
         <h1>Create new account</h1>
+        <p id="demo"></p>
         <form id="test" method="post" action="accountCreationFunction.php">
-            <input type="text" name="user_uid" placeholder="Username" required>
+            <input class="inputFields" type="text" name="user_uid" placeholder="Username" required>
             <br>
-            <input type="password" name="user_pwd" placeholder="Password" required>
+            <input class="inputFields" type="password" name="user_pwd" placeholder="Password" required>
             <br>
-            <input type="text" name="user_first" placeholder="First name" required>
+            <input class="inputFields" type="text" name="user_first" placeholder="First name" required>
             <br>
-            <input type="text" name="user_last" placeholder="Last name" required>
+            <input class="inputFields" type="text" name="user_last" placeholder="Last name" required>
             <br>
-            <input type="text" name="user_email" placeholder="E-mail" required>
+            <input class="inputFields" type="text" name="user_email" placeholder="E-mail" required>
             <br>
             <input type="date" name="user_dob" placeholder="DoB" required>
             <br>
@@ -29,18 +33,11 @@
         </div>
         <?php include "footer.php" ?>
 
-
-
-<h2>JavaScript addEventListener()</h2>
-
-<p>This example uses the addEventListener() method to attach a click event to a button.</p>
-
-<input id="myBtn" type="text" name="user_uid" placeholder="Username" required>
-
-<p id="demo"></p>
-
 <script type="text/javascript" src="accountCreationValidation.js"></script>
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 25a7c13775182e9d35d31ef541baf621b1f16870
     </body>
 </html>

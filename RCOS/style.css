@@ -91,17 +91,23 @@ button{
     margin:40px 40px 40px 40px;
 }
 
+.Movies {
+    max-width: 30%;
+}
+
 #boka {
-    margin-top:10px;
-    margin-bottom:10px;
+    margin-top:50px;
+    margin-bottom:100px;
     height:600px;
 }
 
 #boka #film {
-    background-image: url("pics/Brexit_Metaphor.jpg");
-    background-size:cover;
-	background-repeat:no-repeat;
-    height:350px;
-    width:250px;
+    height:400px;
+    min-width:300px;
     margin:auto;
+    margin-bottom:40px;
+}
+
+#dropdown {
+    margin-top:90px;
 }
