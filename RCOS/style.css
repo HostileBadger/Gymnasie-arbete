@@ -11,13 +11,13 @@ nav
 {
     position: relative;
 }
- 
+
 .section 
 {
-	height:35em;
-	background-size:cover;
-	background-repeat:no-repeat;
-	background-image:url("pics/Jurassic.jpg");
+    height:35em;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-image:url("pics/Jurassic.jpg");
 }
 
 #main 
@@ -28,11 +28,11 @@ nav
 
 .rubrik 
 { /* Positionerar rubrik texten i start hemsidan*/
-	position:absolute;
-	bottom:15em;
-	right:0;
-	left:0;
-	margin:auto;
+    position:absolute;
+    bottom:15em;
+    right:0;
+    left:0;
+    margin:auto;
 }
 
 img 
@@ -65,14 +65,22 @@ img
     
 }
 
-button
-{
-    background: rgb(229,57,53);
-    border: none;
-    padding: 5px;
+button {
+    background-color: red;
     color: white;
+    box-shadow:grey 2px 2px 5px;
     font-family: Italic;
+    padding: 5px;
+    border: none;
 }
+
+button:hover
+{
+    background-color: rgb(229,57,53);
+    box-shadow: 0 2px 2px #666;
+    transform: translateY(1px);
+}
+
 .RCOS-logo
 {
     position: absolute;
