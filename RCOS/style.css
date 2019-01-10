@@ -83,7 +83,6 @@ button
     background-color: rgb(255, 219, 41) ;
     background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
     font-family: italic;
-
 }
 button {
     background-color: red;
@@ -102,10 +101,9 @@ button:hover{
     margin:40px 40px 40px 40px;
 }
 
-<<<<<<< HEAD
 .Movies {
     max-width: 30%;
-=======
+}
 #boka {
     height:400px;
     position:relative;
@@ -118,5 +116,4 @@ button:hover{
     position:absolute;
     top:15px;
     left:15px;
->>>>>>> 20a3c5be5b0bc6235c1ec26cac521126ee058ad8
 }
