@@ -28,6 +28,8 @@
                 <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
             </div>
         
+            <!--Vi kanske vill ha ett val av filmer innan de andra valen låses upp.
+                Försök också att skriva allting på Englelska istökket för Svenska.-->
 
         <div class="col s8" id="dropdown">
             <ul class="collapsible">
