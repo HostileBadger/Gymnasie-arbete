@@ -2,14 +2,21 @@ buttonList = document.getElementsByClassName("inputFields");
 alert("buttonList.length=" + buttonList.length);
 for (var i = 0; i < buttonList.length; i++)
 {
-    //buttonList.item(i).addEventListener("change", displayDate);
+    buttonList.item(i).addEventListener("change", displayDate);
 }
 function displayDate() 
 {
     alert("hej");
     //buttonList.item();
-    
-    document.getElementById("demo").innerHTML = "hej";
+
+//////////////////////Fixa så att alla php variabler är förståliga för JavaScript!!!!!!//////////////////////////
+
+    if(($user_email=="hej")||($user_pwd=="hej")||($user_first=="hej")||($user_last=="hej")||($user_uid=="hej"))
+    {
+        alert("Illegal Character Detected");
+        document.getElementById("demo").innerHTML = "hej";
+    }
+
 }
 /*
 //Illegal character check
