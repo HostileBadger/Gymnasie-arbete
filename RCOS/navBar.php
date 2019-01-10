@@ -5,8 +5,8 @@
         <a href="index.php" class="brand-logo center hide-on-med-and-down"><div class="RCOS-logo">RCOS</div><img src="http://purepng.com/public/uploads/large/purepng.com-popcornpopcorncorndent-cornflint-corn-1411528651430gpsc3.png" alt="Picture"></a>
         </div>
         <ul class="left">
-          <li class="nuvarande"><a href="index.php">Home</a></li> <!-- Navbar -->
-          <li><a href="purchasePage.php">Booking</a></li> <!-- Navbar -->
+          <li><a href="index.php">Home</a></li> <!-- Navbar -->
+          <li><a href="boka.php">Booking</a></li> <!-- Navbar -->
           <li><a href="Movies.php">Movies</a></li> <!-- Navbar -->
           <li><a href="News.php">News</a></li> <!-- Navbar -->
           <li><a href="contact.php">Contact us</a></li> <!-- Navbar -->
