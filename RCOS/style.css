@@ -77,10 +77,12 @@ button
 {
     position: absolute;
     margin-left: -200%;
+    text-shadow: rgb(255, 219, 41) 1px 1px 5px;
     -webkit-background-clip: text;
     color: transparent;
-    background-color: rgb(255, 118, 118) ;
-    background-image: -webkit-linear-gradient(310deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+    background-color: rgb(255, 219, 41) ;
+    background-image: -webkit-linear-gradient(283deg, rgba(255, 255, 255, 1) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 75%, transparent 75%, transparent);
+    font-family: italic;
 }
 button{
     background-color: red;

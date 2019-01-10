@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <script type="text/javascript" src="accountCreationValidation.js"></script>
-=======
->>>>>>> 25a7c13775182e9d35d31ef541baf621b1f16870
 <?php require "header.php";?>
     <body>
     <?php require "navBar.php";?>
@@ -35,9 +32,5 @@
 
 <script type="text/javascript" src="accountCreationValidation.js"></script>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 25a7c13775182e9d35d31ef541baf621b1f16870
     </body>
 </html>
