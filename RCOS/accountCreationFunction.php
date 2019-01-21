@@ -1,5 +1,4 @@
 <?php
-//GÖR SÅ ATT EN JAVASCRIPT KOD KÖRS, SOM KONOTROLERAR ATT ALL INPUT ÄR GODKÄND, INGA FORMAT FEL OCH INTE SQL INJECTION ETC.
 /////CONNECTING TO DATABASE//////////////////////
 $servername = "10.32.35.232";
 $username = "root";
@@ -40,14 +39,20 @@ else
         echo "E-mail in use. Signup failed.";
     }
 
-    else 
+    else
     {
+        //Fungernade funktion för att skapa konto.
         /*$sql = "INSERT INTO `users` (`user_id`, `user_first`, `user_last`, `user_dob`, `user_email`, `user_uid`, `user_pwd`)
-        VALUES (NULL, '$user_first', '$user_last', '$user_dob', '$user_email', '$user_uid', '$user_pwd')";
-        $conn->query($sql);*/
-        $sql = "INSERT INTO `users` (`user_id`, `user_first`, `user_last`, `user_dob`, `user_email`, `user_uid`, `user_pwd`)
-        VALUES (NULL, '$user_first', '$user_last', '$user_dob', '$user_email', '$user_uid', '$user_pwd')";
+        VALUES (NULL, '$user_first', '$user_last', '$user_dob', '$user_email', '$user_uid', '$user_pwd')";*/
         $conn->query($sql);
+
+        //Testfunktion för att skapa konto och undvika SQL Injection.
+        $stmt = $conn->prepare("INSERT INTO 'users' `user_id`, `user_first`, `user_last`, `user_dob`, `user_email`, `user_uid`, `user_pwd`)
+        VALUES (NULL, '$user_first', '$user_last', '$user_dob', '$user_email', '$user_uid', '$user_pwd')");
+        $stmt->bind_param("ssssss", $user_first, $user_last, $user_dob, $user_email, $user_uid, $user_pwd);
+        $stmt->execute();
+        $stmt->close();
+        $conn->close();
 
         header("Location: logginPage.php");
     }

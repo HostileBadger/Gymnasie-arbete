@@ -1,3 +1,5 @@
+<!--Make it so that this page reads the content of a php file the same way the account creation checks for characters and make it so that
+it reads SQL information-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,16 +22,19 @@
 <script src="script.js"></script>
 
 <?php require "navBar.php";?>
-
 <div id="boka">
     <div class="container">
         <div class="row">
             <div class="col s4">
                 <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
             </div>
+            <div class="col s4">
+                <h1>Brexit Metaphor</h1>
+                <p></p>
+            </div>
         
             <!--Vi kanske vill ha ett val av filmer innan de andra valen låses upp.
-                Försök också att skriva allting på Englelska istökket för Svenska.-->
+                Försök också att skriva allting på Englelska istället för Svenska.-->
 
         <div class="col s8" id="dropdown">
             <ul class="collapsible">
