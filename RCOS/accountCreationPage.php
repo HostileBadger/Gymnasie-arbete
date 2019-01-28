@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
 <script type="text/javascript" src="accountCreationValidation.js"></script>
-=======
->>>>>>> 25a7c13775182e9d35d31ef541baf621b1f16870
 <?php require "header.php";?>
     <body>
     <?php require "navBar.php";?>
@@ -21,7 +18,7 @@
             <br>
             <input class="inputFields" type="text" name="user_email" placeholder="E-mail" required>
             <br>
-            <input type="date" name="user_dob" placeholder="DoB" required>
+            <input type="date" class="datepicker" name="user_dob" placeholder="DoB" required>
             <br>
             <button type="submit" name="submit">Create account</button>
         </form>
@@ -35,9 +32,5 @@
 
 <script type="text/javascript" src="accountCreationValidation.js"></script>
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 25a7c13775182e9d35d31ef541baf621b1f16870
     </body>
 </html>
