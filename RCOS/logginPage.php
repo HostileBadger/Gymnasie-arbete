@@ -18,7 +18,7 @@
         <form method="post" action="loginFunction.php">
             <input type="text" name="uid" placeholder="Username">
             <input type="password" name="pwd" placeholder="Password">
-            <button type="submit" name="submit">Login</button>
+            <button type="submit" name="submit">Log in</button>
         </form>
         <br>
         <form method="post" action="accountCreationPage.php">

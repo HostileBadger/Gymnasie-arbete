@@ -2,28 +2,25 @@ buttonList = document.getElementsByClassName("inputFields");
 alert("buttonList.length=" + buttonList.length);
 for (var i = 0; i < buttonList.length; i++)
 {
-    buttonList.item(i).addEventListener("change", displayDate);
+    buttonList.item(i).addEventListener("change", checkCharacters);
 }
-function displayDate() 
+
+function checkCharacters()
 {
-    alert("hej");
     //buttonList.item();
-    document.getElementById("demo").innerHTML = "hej";
-}
-/*
-//Illegal character check
-console.log("hej");
+        //Alerts what is written in the field nr 0.
+    //alert(document.getElementsByClassName("inputFields")[0].value);    
 
-if(($user_email||$user_pwd||$user_first||$user_last||$user_uid)=="hej")
-{
-    echo("Illegal character. ")
-    return;
+    for(i = 0; i < 5; i++)
+    {
+        if(document.getElementsByClassName("inputFields")[i].value == ("hej"))
+        {
+            alert("Illegal Character Detected");
+            document.getElementById("demo").innerHTML = "test";
+        }
+    }
 }
 
-//Email validation
-if(!filter_var($user_email, FILTER_VALIDATE_EMAIL))
-{
-    echo("$user_email is not a valid email address!");
-    echo("<br>");
-    return;
-}*/
+//Define a variable as "document.getElementsByClassName("inputFields")[i].value" Then subject the 
+//variable to a function that searches for a specific character. Inside of the search parenthesis 
+//have an array which contains the illegal characters and loop through all of the elements in the array.

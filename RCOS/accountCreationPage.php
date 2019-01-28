@@ -8,7 +8,7 @@
         <h1>Create new account</h1>
         <p id="demo"></p>
         <form id="test" method="post" action="accountCreationFunction.php">
-            <input class="inputFields" type="text" name="user_uid" placeholder="Username" required>
+            <input id="1" class="inputFields" type="text" name="user_uid" placeholder="Username" required>
             <br>
             <input class="inputFields" type="password" name="user_pwd" placeholder="Password" required>
             <br>

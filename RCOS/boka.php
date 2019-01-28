@@ -1,3 +1,5 @@
+<!--Make it so that this page reads the content of a php file the same way the account creation checks for characters and make it so that
+it reads SQL information-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,6 @@
 <script src="script.js"></script>
 
 <?php require "navBar.php";?>
-
 <div id="boka">
     <div class="container">
         <div class="row">
