@@ -30,7 +30,7 @@ if ($result->num_rows > 0)
     echo "Username taken. Signup failed.";
 }
 
-else 
+else
 {
     $sql = "SELECT user_email FROM users WHERE user_email='" . $_POST["user_email"] . "'";
     $result = $conn->query($sql);
@@ -47,8 +47,8 @@ else
         $conn->query($sql);
 
         //Testfunktion för att skapa konto och undvika SQL Injection.
-        $stmt = $conn->prepare("INSERT INTO 'users' `user_id`, `user_first`, `user_last`, `user_dob`, `user_email`, `user_uid`, `user_pwd`)
-        VALUES (NULL, '$user_first', '$user_last', '$user_dob', '$user_email', '$user_uid', '$user_pwd')");
+        $stmt = $conn->prepare("INSERT INTO `users` (`user_id`, `user_first`, `user_last`, `user_dob`, `user_email`, `user_uid`, `user_pwd`)
+         VALUES (NULL, ?, ?, ?, ?, ?, ?)");
         $stmt->bind_param("ssssss", $user_first, $user_last, $user_dob, $user_email, $user_uid, $user_pwd);
         $stmt->execute();
         $stmt->close();
