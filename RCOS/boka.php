@@ -26,16 +26,16 @@
             <div class="col s4">
                 <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
             </div>
-            <div class="col s4">
-                <h1>Brexit Metaphor</h1>
-                <p></p>
-            </div>
-        
-            <!--Vi kanske vill ha ett val av filmer innan de andra valen låses upp.
-                Försök också att skriva allting på Englelska istället för Svenska.-->
-
         <div class="col s8" id="dropdown">
-            <ul class="collapsible">
+            <div class="flow-text">
+                <h2>Brexit Metaphor</h2>
+                <h5>Action, Äventyr, Romantik</h5>
+                <hr>
+                <p>Evacuation of Allied soldiers from the British Empire, and France, who were cut off and surrounded by the German Army from the beaches and harbor of Dunkirk, France, between May 26- June 04, 1940, during Battle of France in World War II. Written by Harvey</p>
+                
+                <p>Regissör: <b>Robert Rodriguez</b></p>
+            </div> 
+           <ul class="collapsible">
                 <li>
                 <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
                 <div class="collapsible-body">

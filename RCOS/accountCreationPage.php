@@ -18,7 +18,7 @@
             <br>
             <input class="inputFields" type="text" name="user_email" placeholder="E-mail" required>
             <br>
-            <input type="date" name="user_dob" placeholder="DoB" required>
+            <input type="date" class="datepicker" name="user_dob" placeholder="DoB" required>
             <br>
             <button type="submit" name="submit">Create account</button>
         </form>
