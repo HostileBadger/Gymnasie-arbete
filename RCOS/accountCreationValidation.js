@@ -10,10 +10,11 @@ function checkCharacters()
     //buttonList.item();
         //Alerts what is written in the field nr 0.
     //alert(document.getElementsByClassName("inputFields")[0].value);    
-
+    var letters = /^[A-Za-z]+$/;
     for(i = 0; i < 5; i++)
     {
-        if(document.getElementsByClassName("inputFields")[i].value == ("hej"))
+        inputtxt = document.getElementsByClassName("inputFields")[i].value;
+        if(inputtxt.value.match(letters))
         {
             alert("Illegal Character Detected");
             document.getElementById("demo").innerHTML = "test";
