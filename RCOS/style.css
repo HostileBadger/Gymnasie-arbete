@@ -106,9 +106,14 @@ button{
 }
 
 #boka {
-    margin-top:50px;
-    margin-bottom:100px;
+    padding-top:50px;
+    padding-bottom:100px;
     height:600px;
+    /*background-image: url('http://hdqwalls.com/wallpapers/dunkirk-2017-5k-id.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
 }
 
 #boka #film {
@@ -116,9 +121,14 @@ button{
     min-width:300px;
     margin:auto;
     margin-bottom:40px;
+
 }
 
 
 p {
     font-size:13px;
+}
+
+#dropdown {
+    background-color:white;
 }

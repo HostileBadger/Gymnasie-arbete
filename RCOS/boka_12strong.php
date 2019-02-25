@@ -26,16 +26,16 @@ it reads SQL information-->
     <div class="container">
         <div class="row">
             <div class="col s4">
-                <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
+                <img id="film" class="z-depth-3" src="pics/12 Strong.jpg">
             </div>
         <div class="col s8" id="dropdown">
             <div class="flow-text">
-                <h2>Brexit Metaphor (2017)</h2>
-                <h5>Action, Adventure, Romance</h5>
+                <h2>12 Strong (2018)</h2>
+                <h5>Action, Drama, History</h5>
                 <hr>
-                <p>Evacuation of Allied soldiers from the British Empire, and France, who were cut off and surrounded by the German Army from the beaches and harbor of Dunkirk, France, between May 26- June 04, 1940, during Battle of France in World War II. Written by Harvey</p>
+                <p>12 Strong tells the story of the first Special Forces team deployed to Afghanistan after 9/11; under the leadership of a new captain, the team must work with an Afghan warlord to take down the Taliban.</p>
                 
-                <p>Director: <b>Robert Rodriguez</b></p>
+                <p>Director: <b>Nicolai Fuglsig</b></p>
             </div> 
            <ul class="collapsible">
                 <li>
