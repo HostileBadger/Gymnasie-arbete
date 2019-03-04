@@ -40,7 +40,8 @@
                 <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
                 <div class="collapsible-body">
                     <div class="input-field">
-                    <select>
+                    <form action="asd.php" method="GET">
+                    <select name="asd">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -77,6 +78,8 @@
                             <option value="3">Option 3</option>
                         </select>
                         <label>Välj plats</label>
+                        <input type="submit" name="submit" value="Submit the form"/>
+                        </form>
                     </div>
                 </div>
                 </li>
@@ -84,6 +87,7 @@
         </div>
     </div>
 </div>
+
 
 <?php require "footer.php";?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
