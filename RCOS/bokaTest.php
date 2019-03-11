@@ -81,7 +81,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                 <select name="datum">
                                     <option value="" disabled selected>Choose an option!</option>
                                 <?php 
-                                    $sql = "SELECT * FROM show_times WHERE movie_id='$id'";
+                                    $sql = "SELECT DISTINCT dates FROM show_times WHERE movie_id='$id'";
                                     $result = $conn->query($sql);    
                                     if ($result->num_rows > 0) {
                                         while($row = $result->fetch_assoc()) {
