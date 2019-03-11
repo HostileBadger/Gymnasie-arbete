@@ -79,7 +79,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         <div class="input-field">
                             <form action="boka.php" method="POST">
                                 <select name="datum">
-
+                                    <option value="" disabled selected>Choose an option!</option>
+                                <?php 
+                                    $sql = "SELECT * FROM show_times WHERE movie_id='$id'";
+                                    $result = $conn->query($sql);    
+                                    if ($result->num_rows > 0) {
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<option value="' . $row['dates'] . '">' . $row['dates'] . '</option>';
+                                        }
+                                    }
+                                ?>
                                 </select>
                         </div>
                     </div>
