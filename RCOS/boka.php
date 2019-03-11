@@ -26,6 +26,7 @@
             <div class="col s4">
                 <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
             </div>
+        <!-- Klipp här? -->
         <div class="col s8" id="dropdown">
             <div class="flow-text">
                 <h2>Brexit Metaphor (2017)</h2>
