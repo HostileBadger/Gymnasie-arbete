@@ -41,8 +41,8 @@
                 <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
                 <div class="collapsible-body">
                     <div class="input-field">
-                    <form action="asd.php" method="GET">
-                    <select name="asd">
+                    <form action="asd.php" method="POST">
+                    <select name="datum">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -57,7 +57,7 @@
                 <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
                 <div class="collapsible-body">
                     <div class="input-field">
-                        <select>
+                        <select name="tider">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
@@ -72,7 +72,7 @@
                 <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
                 <div class="collapsible-body"><span>Film</span>
                     <div class="input-field">
-                        <select>
+                        <select name="platser">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>

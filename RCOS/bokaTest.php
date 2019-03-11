@@ -1,5 +1,3 @@
-<!--Make it so that this page reads the content of a php file the same way the account creation checks for characters and make it so that
-it reads SQL information-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,71 +20,113 @@ it reads SQL information-->
 <script src="script.js"></script>
 
 <?php require "navBar.php";?>
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] === 'GET') {
+    $servername = "10.32.35.232"; // Localhost
+    $username = "root";
+    $password = "";
+    $dbname = "gymnasie-arbete";
+
+    $conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+    if ($conn->connect_error) 
+    {
+        die("Connection failed: " . $conn->connect_error);
+    }
+
+    $id = $_GET['id'];
+    $sql = "SELECT * FROM movies WHERE id='$id'";
+    $result = $conn->query($sql);
+    if ($result->num_rows > 0) {
+        while($row = $result->fetch_assoc()) {
+            $result_id = $row['id'];
+            $name = $row['movie_name'];
+            $genre = $row['genre'];
+            $description = $row['description'];
+            $director = $row['director'];
+            $pic = $row['pic'];
+        }
+    }
+} else {
+    echo '<h1>Ange film!</h1>';
+}
+?>
+
 <div id="boka">
     <div class="container">
         <div class="row">
             <div class="col s4">
-                <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
+                <?php
+                echo '<img id ="film" class="z-depth-3" src="' . $pic . '">';
+                ?>
             </div>
-            <div class="col s4">
-                <h1>Brexit Metaphor</h1>
-                <p></p>
+            <div class="col s8" id="dropdown">
+                <div class="flow-text">
+                <?php 
+                    echo "<h2>" . $name . "</h2>";
+                    echo "<h5>" . $genre . "</h5>";   
+                    echo "<hr>";   
+                    echo "<p>" . $description . "</p>";   
+
+                    echo "<p>Director: <b>" . $director . "</b></h2>";
+                ?>
+                </div>
+                <ul class="collapsible">
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
+                    <div class="collapsible-body">
+                        <div class="input-field">
+                            <form action="boka.php" method="POST">
+                                <select name="datum">
+
+                                </select>
+                        </div>
+                    </div>
+                    </li>
+                    
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
+                    <div class="collapsible-body">
+                        <div class="input-field">
+                            <select name="tider">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Välj tid</label>
+                        </div>
+                    </div>
+                    </li>
+                    
+                    <li>
+                    <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
+                    <div class="collapsible-body"><span>Film</span>
+                        <div class="input-field">
+                            <select name="platser">
+                                <option value="" disabled selected>Choose your option</option>
+                                <option value="1">Option 1</option>
+                                <option value="2">Option 2</option>
+                                <option value="3">Option 3</option>
+                            </select>
+                            <label>Välj plats</label>
+                            <input type="submit" name="submit" value="Submit the form"/>
+                            </form>
+                        </div>
+                    </div>
+                    </li>
+
+                </ul>
             </div>
-        
-            <!--Vi kanske vill ha ett val av filmer innan de andra valen låses upp.
-                Försök också att skriva allting på Englelska istället för Svenska.-->
-
-        <div class="col s8" id="dropdown">
-            <ul class="collapsible">
-                <li>
-                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
-                <div class="collapsible-body">
-                    <div class="input-field">
-                    <select>
-                        <option class="choices" value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Välj datum</label>
-                    </div>
-                </div>
-                </li>
-
-                <li>
-                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
-                <div class="collapsible-body">
-                    <div class="input-field">
-                        <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                        <label>Välj tid</label>
-                    </div>
-                </div>
-                
-                </li>
-                <li>
-                <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
-                <div class="collapsible-body"><span>Film</span>
-                    <div class="input-field">
-                        <select>
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                        <label>Välj plats</label>
-                    </div>
-                </div>
-                </li>
-            </ul>
         </div>
     </div>
 </div>
 
+
+<?php 
+$conn->close();
+?>
 <?php require "footer.php";?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
