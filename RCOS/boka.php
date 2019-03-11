@@ -32,7 +32,7 @@
         <div class="col s8" id="dropdown">
             <ul class="collapsible">
                 <li>
-                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
+                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Date</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                     <select>
@@ -41,13 +41,13 @@
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
                     </select>
-                    <label>Välj datum</label>
+                    <label>Choose Date</label>
                     </div>
                 </div>
                 </li>
 
                 <li>
-                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
+                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Time</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                         <select>
@@ -56,14 +56,14 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
-                        <label>Välj tid</label>
+                        <label>Choose time</label>
                     </div>
                 </div>
                 
                 </li>
                 <li>
-                <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
-                <div class="collapsible-body"><span>Film</span>
+                <div class="collapsible-header"><i class="material-icons">event_seat</i>Seats</div>
+                <div class="collapsible-body"><span>Movie</span>
                     <div class="input-field">
                         <select>
                             <option value="" disabled selected>Choose your option</option>
@@ -71,7 +71,7 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
-                        <label>Välj plats</label>
+                        <label>Choose seats</label>
                     </div>
                 </div>
                 </li>

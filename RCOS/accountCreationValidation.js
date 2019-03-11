@@ -2,7 +2,7 @@ buttonList = document.getElementsByClassName("inputFields");
 alert("buttonList.length=" + buttonList.length);
 for (var i = 0; i < buttonList.length; i++)
 {
-    //buttonList.item(i).addEventListener("change", displayDate);
+    buttonList.item(i).addEventListener("change", displayDate);
 }
 function displayDate() 
 {
