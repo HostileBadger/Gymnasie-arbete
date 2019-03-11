@@ -38,7 +38,7 @@
             </div> 
            <ul class="collapsible">
                 <li>
-                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
+                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Date</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                     <form action="asd.php" method="POST">
@@ -48,13 +48,13 @@
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
                     </select>
-                    <label>Välj datum</label>
+                    <label>Choose Date</label>
                     </div>
                 </div>
                 </li>
 
                 <li>
-                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
+                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Time</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                         <select name="tider">
@@ -63,14 +63,14 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
-                        <label>Välj tid</label>
+                        <label>Choose time</label>
                     </div>
                 </div>
                 
                 </li>
                 <li>
-                <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
-                <div class="collapsible-body"><span>Film</span>
+                <div class="collapsible-header"><i class="material-icons">event_seat</i>Seats</div>
+                <div class="collapsible-body"><span>Movie</span>
                     <div class="input-field">
                         <select name="platser">
                             <option value="" disabled selected>Choose your option</option>
@@ -78,9 +78,13 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
+<<<<<<< HEAD
+                        <label>Choose seats</label>
+=======
                         <label>Välj plats</label>
                         <input type="submit" name="submit" value="Submit the form"/>
                         </form>
+>>>>>>> 9d82c831992a702fd864256f2fe265f23489259d
                     </div>
                 </div>
                 </li>
