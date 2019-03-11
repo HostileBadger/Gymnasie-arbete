@@ -1,3 +1,5 @@
+<!--Make it so that this page reads the content of a php file the same way the account creation checks for characters and make it so that
+it reads SQL information-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,36 +26,35 @@
     <div class="container">
         <div class="row">
             <div class="col s4">
-                <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
+                <img id="film" class="z-depth-3" src="pics/blade.jpg">
             </div>
-        <div class="col s8" id="dropdown">
+        <div class="col s8">
             <div class="flow-text">
-                <h2>Brexit Metaphor (2017)</h2>
-                <h5>Action, Adventure, Romance</h5>
+                <h2>Blade Runner 2049 (2018)</h2>
+                <h5>Drama, Mystery, Sci-Fi</h5>
                 <hr>
-                <p>Evacuation of Allied soldiers from the British Empire, and France, who were cut off and surrounded by the German Army from the beaches and harbor of Dunkirk, France, between May 26- June 04, 1940, during Battle of France in World War II. Written by Harvey</p>
+                <p>A young blade runner's discovery of a long-buried secret leads him to track down former blade runner Rick Deckard, who's been missing for thirty years.</p>
                 
-                <p>Director: <b>Robert Rodriguez</b></p>
+                <p>Director: <b>Denis Villenueve</b></p>
             </div> 
-           <ul class="collapsible">
+           <ul class="collapsible" id="dropdown">
                 <li>
-                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Date</div>
+                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
                 <div class="collapsible-body">
                     <div class="input-field">
-                    <form action="asd.php" method="GET">
-                    <select name="asd">
+                    <select>
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
                         <option value="3">Option 3</option>
                     </select>
-                    <label>Choose Date</label>
+                    <label>Välj datum</label>
                     </div>
                 </div>
                 </li>
 
                 <li>
-                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Time</div>
+                <div class="collapsible-header" id="dropdown"><i class="material-icons">alarm_add</i>Tider</div>
                 <div class="collapsible-body">
                     <div class="input-field">
                         <select>
@@ -62,14 +63,14 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
-                        <label>Choose time</label>
+                        <label>Välj tid</label>
                     </div>
                 </div>
                 
                 </li>
                 <li>
-                <div class="collapsible-header"><i class="material-icons">event_seat</i>Seats</div>
-                <div class="collapsible-body"><span>Movie</span>
+                <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
+                <div class="collapsible-body"><span>Film</span>
                     <div class="input-field">
                         <select>
                             <option value="" disabled selected>Choose your option</option>
@@ -77,13 +78,7 @@
                             <option value="2">Option 2</option>
                             <option value="3">Option 3</option>
                         </select>
-<<<<<<< HEAD
-                        <label>Choose seats</label>
-=======
                         <label>Välj plats</label>
-                        <input type="submit" name="submit" value="Submit the form"/>
-                        </form>
->>>>>>> 9d82c831992a702fd864256f2fe265f23489259d
                     </div>
                 </div>
                 </li>
@@ -91,7 +86,6 @@
         </div>
     </div>
 </div>
-
 
 <?php require "footer.php";?>
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
