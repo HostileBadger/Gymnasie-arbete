@@ -90,6 +90,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                                     }
                                 ?>
                                 </select>
+                                <label>Välj datum</label>
                         </div>
                     </div>
                     </li>
@@ -100,9 +101,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         <div class="input-field">
                             <select name="tider">
                                 <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
+                                <?php 
+                                    $sql = "SELECT * FROM show_times WHERE movie_id='$id'";
+                                    
+                                    $result = $conn->query($sql);    
+
+                                    if ($result->num_rows > 0) {
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<option value="' . $row['time'] . '">' . $row['time'] . '</option>';
+                                        }
+                                    }
+                                ?>
                             </select>
                             <label>Välj tid</label>
                         </div>
@@ -115,9 +124,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         <div class="input-field">
                             <select name="platser">
                                 <option value="" disabled selected>Choose your option</option>
-                                <option value="1">Option 1</option>
-                                <option value="2">Option 2</option>
-                                <option value="3">Option 3</option>
+                                <?php 
+                                    $sql = "SELECT * FROM seats WHERE id='$id' AND";
+                                    $result = $conn->query($sql);    
+                                    if ($result->num_rows > 0) {
+                                        while($row = $result->fetch_assoc()) {
+                                            echo '<option value="' . $row['time'] . '">' . $row['time'] . '</option>';
+                                        }
+                                    }
+                                ?>
                             </select>
                             <label>Välj plats</label>
                             <input type="submit" name="submit" value="Submit the form"/>
