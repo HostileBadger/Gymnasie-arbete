@@ -9,7 +9,7 @@ if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSI
 ////////
 
 /////CONNECTING TO DATABASE//////////////////////
-$servername = "10.32.35.232";
+$servername = "10.32.35.232"; // localhost
 $username = "root";
 $password = "";
 $dbname = "gymnasie-arbete";

@@ -20,76 +20,66 @@
 <script src="script.js"></script>
 
 <?php require "navBar.php";?>
-<div id="boka">
-    <div class="container">
-        <div class="row">
-            <div class="col s4">
-                <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
-            </div>
-        <!-- Klipp här? -->
-        <div class="col s8" id="dropdown">
-            <div class="flow-text">
-                <h2>Brexit Metaphor (2017)</h2>
-                <h5>Action, Adventure, Romance</h5>
-                <hr>
-                <p>Evacuation of Allied soldiers from the British Empire, and France, who were cut off and surrounded by the German Army from the beaches and harbor of Dunkirk, France, between May 26- June 04, 1940, during Battle of France in World War II. Written by Harvey</p>
-                
-                <p>Director: <b>Robert Rodriguez</b></p>
-            </div> 
-           <ul class="collapsible">
-                <li>
-                <div class="collapsible-header"><i class="material-icons">calendar_today</i>Date</div>
-                <div class="collapsible-body">
-                    <div class="input-field">
-                    <form action="asd.php" method="POST">
-                    <select name="datum">
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="1">Option 1</option>
-                        <option value="2">Option 2</option>
-                        <option value="3">Option 3</option>
-                    </select>
-                    <label>Choose Date</label>
-                    </div>
-                </div>
-                </li>
+<div class="container">
+    <div id="bokninglyckades">
+    <?php 
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $servername = "localhost"; // Localhost
+        $username = "root";
+        $password = "";
+        $dbname = "gymnasie-arbete";
 
-                <li>
-                <div class="collapsible-header"><i class="material-icons">alarm_add</i>Time</div>
-                <div class="collapsible-body">
-                    <div class="input-field">
-                        <select name="tider">
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-                        <label>Choose time</label>
-                    </div>
-                </div>
-                
-                </li>
-                <li>
-                <div class="collapsible-header"><i class="material-icons">event_seat</i>Seats</div>
-                <div class="collapsible-body"><span>Movie</span>
-                    <div class="input-field">
-                        <select name="platser">
-                            <option value="" disabled selected>Choose your option</option>
-                            <option value="1">Option 1</option>
-                            <option value="2">Option 2</option>
-                            <option value="3">Option 3</option>
-                        </select>
-<<<<<<< HEAD
-                        <label>Choose seats</label>
-=======
-                        <label>Välj plats</label>
-                        <input type="submit" name="submit" value="Submit the form"/>
-                        </form>
->>>>>>> 9d82c831992a702fd864256f2fe265f23489259d
-                    </div>
-                </div>
-                </li>
-            </ul>
-        </div>
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        if ($conn->connect_error) 
+        {
+            die("Connection failed: " . $conn->connect_error);
+        }
+
+        $datum_id = $_POST['datum'];
+        $show_id = $_POST['movie_id'];
+        print_r($_POST);
+        $time = $_POST['tider'];
+
+        $sql = "SELECT DISTINCT dates FROM show_times WHERE movie_id='$datum_id'";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $datum = $row['dates'];
+            }
+        } else {
+            echo 'error';
+        }
+        
+
+        #Få fram unik id
+        $sql = "SELECT * FROM show_times WHERE movie_id='$datum_id' AND time='$time'";
+        $result = $conn->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $unique_id = $row['id'];
+            }
+        } else {
+            echo 'error';
+        }
+
+        echo $unique_id;
+
+        echo $datum;
+        $user = $_SESSION['user'];
+        $sql = "INSERT INTO reserved (`date`,`time`, `user`, `show_id`) VALUES ('$datum', '$time', '$user', '$unique_id')";
+        $conn->query($sql);
+        echo '<h4 class="center-align">Bokning lyckades!</h4>';   
+
+
+    }
+    $conn->close();
+?>
+
+
+    <br><br><br>
+    <br><br><br>
+    <br><br><br>
+
     </div>
 </div>
 
