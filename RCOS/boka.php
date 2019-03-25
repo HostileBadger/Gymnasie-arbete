@@ -26,6 +26,7 @@
             <div class="col s4">
                 <img id="film" class="z-depth-3" src="pics/Brexit_Metaphor.jpg">
             </div>
+        <!-- Klipp här? -->
         <div class="col s8" id="dropdown">
             <div class="flow-text">
                 <h2>Brexit Metaphor (2017)</h2>
@@ -40,8 +41,8 @@
                 <div class="collapsible-header"><i class="material-icons">calendar_today</i>Date</div>
                 <div class="collapsible-body">
                     <div class="input-field">
-                    <form action="asd.php" method="GET">
-                    <select name="asd">
+                    <form action="asd.php" method="POST">
+                    <select name="datum">
                         <option value="" disabled selected>Choose your option</option>
                         <option value="1">Option 1</option>
                         <option value="2">Option 2</option>
@@ -56,7 +57,7 @@
                 <div class="collapsible-header"><i class="material-icons">alarm_add</i>Time</div>
                 <div class="collapsible-body">
                     <div class="input-field">
-                        <select>
+                        <select name="tider">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>
@@ -71,7 +72,7 @@
                 <div class="collapsible-header"><i class="material-icons">event_seat</i>Seats</div>
                 <div class="collapsible-body"><span>Movie</span>
                     <div class="input-field">
-                        <select>
+                        <select name="platser">
                             <option value="" disabled selected>Choose your option</option>
                             <option value="1">Option 1</option>
                             <option value="2">Option 2</option>

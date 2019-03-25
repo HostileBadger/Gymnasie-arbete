@@ -7,7 +7,11 @@
   ?>
   <div class="section">
     <div class="container rubrik">
+<<<<<<< HEAD
       <h1 id="Ant-ManFONT" class="header center white-text">Ant man and the Wasp</h1>
+=======
+      <h1 class="header center white-text">Jurassic World</h1>
+>>>>>>> 2a8addcbd0363fdc3e1199b7d1e3e19a3acd9c24
       <div class="center">
         <a class="red darken-1 waves-effect waves-light btn-large transparent" href="purchasePage.php">Purchase Ticket</a>
       </div>
