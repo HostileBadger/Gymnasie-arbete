@@ -1,6 +1,10 @@
 <?php
 /////CONNECTING TO DATABASE//////////////////////
+<<<<<<< HEAD
 $servername = "10.32.35.232"; // Localhost
+=======
+$servername = "localhost";
+>>>>>>> c68012bbf1d0cb411543f762531c45e4b002613c
 $username = "root";
 $password = "";
 $dbname = "gymnasie-arbete";
@@ -54,7 +58,7 @@ else
         $stmt->close();
         $conn->close();
 
-        header("Location: logginPage.php");
+       header("Location: logginPage.php");
     }
 }
 ?>
