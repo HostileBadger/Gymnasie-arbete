@@ -73,7 +73,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                     echo "<p>Director: <b>" . $director . "</b></h2>";
                 ?>
                 </div>
-<<<<<<< HEAD
             <form action="boka.php" method="POST">
             <br>
                 <div class="input-field">
@@ -99,76 +98,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                         </select>
                     <label>Välj tid</label>
                 </div>
-=======
-                <ul class="collapsible">
-                    <li>
-                    <div class="collapsible-header"><i class="material-icons">calendar_today</i>Datum</div>
-                    <div class="collapsible-body">
-                        <div class="input-field">
-                            <form action="boka.php" method="POST">
-                                <select name="datum">
-                                    <option value="" disabled selected>Choose an option!</option>
-                                <?php 
-                                    $sql = "SELECT DISTINCT dates FROM show_times WHERE movie_id='$id'";
-                                    $result = $conn->query($sql);    
-                                    if ($result->num_rows > 0) {
-                                        while($row = $result->fetch_assoc()) {
-                                            echo '<option value="' . $row['dates'] . '">' . $row['dates'] . '</option>';
-                                        }
-                                    }
-                                ?>
-                                </select>
-                                <label>Välj datum</label>
-                        </div>
-                    </div>
-                    </li>
-                    
-                    <li>
-                    <div class="collapsible-header"><i class="material-icons">alarm_add</i>Tider</div>
-                    <div class="collapsible-body">
-                        <div class="input-field">
-                            <select name="tider">
-                                <option value="" disabled selected>Choose your option</option>
-                                <?php 
-                                    $sql = "SELECT * FROM show_times WHERE movie_id='$id'";
-                                    
-                                    $result = $conn->query($sql);    
-
-                                    if ($result->num_rows > 0) {
-                                        while($row = $result->fetch_assoc()) {
-                                            echo '<option value="' . $row['time'] . '">' . $row['time'] . '</option>';
-                                        }
-                                    }
-                                ?>
-                            </select>
-                            <label>Välj tid</label>
-                        </div>
-                    </div>
-                    </li>
-                    
-                    <li>
-                    <div class="collapsible-header"><i class="material-icons">event_seat</i>Platser</div>
-                    <div class="collapsible-body"><span>Film</span>
-                        <div class="input-field">
-                            <select name="platser">
-                                <option value="" disabled selected>Choose your option</option>
-                                <?php 
-                                    $sql = "SELECT * FROM seats WHERE id='$id'";
-                                    $result = $conn->query($sql);    
-                                    if ($result->num_rows > 0) {
-                                        while($row = $result->fetch_assoc()) {
-                                            echo '<option value="' . $row['id'] . '">' . $row['id'] . '</option>';
-                                        }
-                                    }
-                                ?>
-                            </select>
-                            <label>Välj plats</label>
-                            <input type="submit" name="submit" value="Submit the form"/>
-                            </form>
-                        </div>
-                    </div>
-                    </li>
->>>>>>> c68012bbf1d0cb411543f762531c45e4b002613c
 
                 <input type="hidden" id="movie_id" name="movie_id" value="<?php echo $id; ?>"/>
                 <button class="btn waves-effect waves-light" type="submit" name="submit">Submit

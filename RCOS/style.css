@@ -136,3 +136,36 @@ p {
 #Ant-ManFONT{
     font-family: cursive, sans-serif;
 }
+.Movies{
+    max-width: 100%;
+}
+.Movies div{
+    margin-left: 2%;
+    margin-right: 1%;
+    margin-top:2%;
+    display: inline-block;
+    color: black;
+    font-family:  Impact;
+    font-size: 110%;
+    max-width: 20%;
+}
+
+.Movies h1{
+    position: relative;
+    font-size: 240%;
+    color: black;
+    left: 40%;
+    max-width: 33%;
+    font-family:  Impact;
+}
+.Movies p{
+    margin-left: 33%;
+   
+}
+
+.Movies div img{
+    max-width: 100%;
+}
+.stretchyboy{
+    height: 25.7em;
+}

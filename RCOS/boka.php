@@ -1,3 +1,12 @@
+<?php session_start();
+
+if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSION["isLoggedIn"] == false)
+{
+    header("Location: logginPage.php");
+    return;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

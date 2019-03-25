@@ -9,7 +9,7 @@
     <div class="container rubrik">
       <h1 id="Ant-ManFONT" class="header center white-text">Ant man and the Wasp</h1>
       <div class="center">
-        <a class="red darken-1 waves-effect waves-light btn-large transparent" href="purchasePage.php">Purchase Ticket</a>
+        <a class="red darken-1 waves-effect waves-light btn-large transparent" href="bokaTest.php?id=1">Purchase Ticket</a>
       </div>
     </div>
   </div>
