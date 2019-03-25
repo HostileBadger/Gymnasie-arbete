@@ -2,11 +2,8 @@ buttonList = document.getElementsByClassName("inputFields");
 alert("buttonList.length=" + buttonList.length);
 for (var i = 0; i < buttonList.length; i++)
 {
-<<<<<<< HEAD
     buttonList.item(i).addEventListener("change", displayDate);
-=======
     buttonList.item(i).addEventListener("change", checkCharacters);
->>>>>>> 9d82c831992a702fd864256f2fe265f23489259d
 }
 
 function checkCharacters()
