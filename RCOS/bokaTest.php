@@ -125,11 +125,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
                             <select name="platser">
                                 <option value="" disabled selected>Choose your option</option>
                                 <?php 
-                                    $sql = "SELECT * FROM seats WHERE id='$id' AND";
+                                    $sql = "SELECT * FROM seats WHERE id='$id'";
                                     $result = $conn->query($sql);    
                                     if ($result->num_rows > 0) {
                                         while($row = $result->fetch_assoc()) {
-                                            echo '<option value="' . $row['time'] . '">' . $row['time'] . '</option>';
+                                            echo '<option value="' . $row['id'] . '">' . $row['id'] . '</option>';
                                         }
                                     }
                                 ?>
