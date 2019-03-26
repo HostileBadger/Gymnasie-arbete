@@ -7,7 +7,7 @@
         <ul class="left">
           <li><a href="index.php">Home</a></li> <!-- Navbar -->
           <li><a href="Movies.php">Movies</a></li> <!-- Navbar -->
-          <li><a href="boka.php">Booking</a></li> <!-- Navbar -->
+          <li><a href="bokaTest.php?id=1">Booking</a></li> <!-- Navbar -->
           <li><a href="News.php">News</a></li> <!-- Navbar -->
           <li><a href="contact.php">Contact us</a></li> <!-- Navbar -->
         </ul>
