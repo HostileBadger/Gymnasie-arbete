@@ -1,10 +1,6 @@
 <?php
 /////CONNECTING TO DATABASE//////////////////////
-<<<<<<< HEAD
-$servername = "10.32.35.232"; // Localhost
-=======
 $servername = "localhost"; // Localhost
->>>>>>> 5d889962b35e4c8c243d4ea0a68f57b437362554
 $username = "root";
 $password = "";
 $dbname = "gymnasie-arbete";
