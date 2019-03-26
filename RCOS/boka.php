@@ -49,34 +49,42 @@ if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSI
         print_r($_POST);
         $time = $_POST['tider'];
 
-        $sql = "SELECT DISTINCT dates FROM show_times WHERE movie_id='$datum_id'";
+        $sql = "SELECT DISTINCT dates FROM show_times WHERE id  ='$datum_id'";
         $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
+
+        if ($result->num_rows > 0) 
+        {
+            while($row = $result->fetch_assoc()) 
+            {
                 $datum = $row['dates'];
             }
         } else {
             echo 'error';
         }
         
-
+        echo"<br><br>datum id: $datum_id<br>Tid: $time";
         #Få fram unik id
-        $sql = "SELECT * FROM show_times WHERE movie_id='$datum_id' AND time='$time'";
+        $sql = "SELECT * FROM show_times WHERE id='$datum_id'";
         $result = $conn->query($sql);
-        if ($result->num_rows > 0) {
-            while($row = $result->fetch_assoc()) {
-                $unique_id = $row['id'];
+        if ($result->num_rows > 0) 
+        {
+            while($row = $result->fetch_assoc()) 
+            {
+                $unique_id = $row['movie_id'];
             }
-        } else {
-            echo 'error';
+        } 
+        else 
+        {
+            echo '<br><br>Dålig Sql för att få fram unik id<br>';
         }
 
-        echo $unique_id;
+        echo "<br>Testing things: <br><br>$unique_id<br><br>";
 
         echo $datum;
         $user = $_SESSION['user'];
         $sql = "INSERT INTO reserved (`date`,`time`, `user`, `show_id`) VALUES ('$datum', '$time', '$user', '$unique_id')";
         $conn->query($sql);
+
         header("Location: index.php");   
 
 
