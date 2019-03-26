@@ -63,5 +63,47 @@ echo "<table>
     <td>$user_dob</td>
 </tr>
 </table>";
+
+//////////////////////////////////////////
+if ($conn->connect_error) 
+{
+    die("Connection failed: " . $conn->connect_error);
+}
+$sql = "SELECT show_id,time FROM reserved WHERE user='" . $_SESSION["user"] . "'";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0)
+{
+    $num = 1;
+    // output data of each row
+    while($row = $result->fetch_assoc())
+    {        
+        $show_id = $row["show_id"];
+        $time = $row["time"];
+
+        $sql = "SELECT movie_name FROM movies WHERE id='$show_id'";
+        $result = $conn->query($sql);
+        
+        if ($result->num_rows > 0)
+        {            
+            // output data of each row
+            while($row = $result->fetch_assoc())
+            {
+                $showName = $row["movie_name"];
+
+                echo "<table>
+                <tr>
+                    <td>Booked movie #$num</td>
+                    <td>$showName at $time o' clock</td>
+                </tr>
+                </table>";
+                $num = $num + 1;
+
+            }
+        }
+    }
+} 
 $conn->close();
+
+
 ?>

@@ -77,7 +77,7 @@ if(!isset($_SESSION["isLoggedIn"]) || $_SESSION["isLoggedIn"] == null || $_SESSI
         $user = $_SESSION['user'];
         $sql = "INSERT INTO reserved (`date`,`time`, `user`, `show_id`) VALUES ('$datum', '$time', '$user', '$unique_id')";
         $conn->query($sql);
-        echo '<h4 class="center-align">Bokning lyckades!</h4>';   
+        header("Location: index.php");   
 
 
     }
