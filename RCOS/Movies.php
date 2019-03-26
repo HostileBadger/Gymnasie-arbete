@@ -4,8 +4,8 @@
     <body>
         <?php
             require "navBar.php";
-            /////CONNECTING TO DATABASE//////////////////////
-            $servername = "10.32.35.232";
+            /* /////CONNECTING TO DATABASE//////////////////////
+            $servername = "localhost";
             $username = "root";
             $password = "";
             $dbname = "gymnasie-arbete";
@@ -31,8 +31,39 @@
             } else 
             {
                 echo "0 results";
-            }
+            } */
         ?>
+        <div class="Movies">
+              <h1>Movies Available</h1>
+            <div>   
+                   
+               <a href="bokaTest.php?id=4"> <img src="pics/12 Strong.jpg"></a>
+             <p>12 Strong</p>
+            </div>
+            <div >
+        
+                <a href="bokaTest.php?id=3"><img src="pics/blade.jpg"></a> 
+                <p>Blade Runner</p>               
+            </div>
+            <div>
+               
+                <a href="bokaTest.php?id=2"><img src="pics/Brexit_Metaphor.jpg"></a>
+                <p>Brexit Metaphor</p>
+            </div>
+            <div>       
+                
+                <a href="bokaTest.php?id=1"><img class="stretchyboy"src="pics/Jurassic.jpg"></a>
+                 <p>Ant-Man and the Wasp</p>
+            </div>
+            <div>
+                
+                <a href="bokaTest.php?id=5"><img src="pics/The Nun.png"></a>
+                <p>The Nun</p>
+            </div>
+            <div>    
+        </div>
+
+          </div>
         <h1></h1>
         <?php require "footer.php"; ?>
     </body>

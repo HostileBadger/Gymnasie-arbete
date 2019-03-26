@@ -5,7 +5,7 @@
         <?php
             require "navBar.php";
             /////CONNECTING TO DATABASE//////////////////////
-            $servername = "10.32.35.232"; // localhost
+            $servername = "localhost"; // localhost
             $username = "root";
             $password = "";
             $dbname = "gymnasie-arbete";

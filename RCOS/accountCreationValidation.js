@@ -7,7 +7,7 @@ for (var i = 0; i < buttonList.length; i++)
 }
 
 
-function checkCharacters()
+/* function checkCharacters()
 {
     array = ["/","$","%","&","!"," ","¤","+","=","(",")"];
     //buttonList.item();
@@ -25,7 +25,7 @@ function checkCharacters()
         }
     }
 }
-checkCharacters();
+checkCharacters(); */
 
 //Define a variable as "document.getElementsByClassName("inputFields")[i].value" Then subject the 
 //variable to a function that searches for a specific character. Inside of the search parenthesis 
