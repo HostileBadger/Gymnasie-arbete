@@ -16,8 +16,8 @@
     <div id="signupform">
         <h1>Sign in to existing account</h1>
         <form method="post" action="loginFunction.php">
-            <input type="text" name="uid" placeholder="Username">
-            <input type="password" name="pwd" placeholder="Password">
+            <input type="text" name="uid" placeholder="Username" required>
+            <input type="password" name="pwd" placeholder="Password" required>
             <button type="submit" name="submit">Log in</button>
         </form>
         <br>
